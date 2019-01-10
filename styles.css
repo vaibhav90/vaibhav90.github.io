@@ -1149,6 +1149,14 @@ article .article-metadata {
   color: #4b4f56;
   font-size: 0.8rem;
 }
+/*************************************************
+ *  Skills
+ **************************************************/
+
+ ul.bullet {
+  margin:0 0 10px 0;
+ }
+
 
 /*************************************************
  *  Projects
@@ -2229,8 +2237,4 @@ body.dark,
 .dark .btn-primary,
 .dark .btn.btn-primary.active {
   color: initial;
-}
-
-ul:nth-of-type(3) {
-  list-style-type: square;
 }
