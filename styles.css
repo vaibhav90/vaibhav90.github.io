@@ -1156,6 +1156,7 @@ article .article-metadata {
  ul.bullet {
   list-style-image: url(https://vaibhav90.github.io/img/pi.png);
   margin:0 0 15px 0;
+  background-size: 10px;
  }
 
 
