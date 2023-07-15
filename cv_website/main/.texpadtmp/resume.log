@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.27)  28 JUN 2023 19:09
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.27)  15 JUL 2023 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -746,31 +746,32 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 10.
 ) (./resume/experience.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 27.
+(Font)              scaled to size 10.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 27.
+(Font)              scaled to size 10.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not available
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 27.
+(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 27.
+(Font)              scaled to size 9.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 27.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 27.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 27.
+(Font)              scaled to size 8.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not available
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 27.
+(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 27.
+(Font)              scaled to size 8.0pt on input line 28.
 ) (./resume/education.tex) (./resume/skills.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 9.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 10.
  [1
 
-]) [2] (/Users/vki/Desktop/projects/vki_projects/vaibhav90.github.io/cv_website/main/.texpadtmp/resume.aux)
+]
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/b/n' will be
+(Font)              scaled to size 9.0pt on input line 10.
+) [2] (/Users/vki/Desktop/projects/vki_projects/vaibhav90.github.io/cv_website/main/.texpadtmp/resume.aux)
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
