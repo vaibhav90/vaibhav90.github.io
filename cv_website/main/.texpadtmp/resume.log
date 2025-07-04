@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.27)  23 AUG 2024 09:46
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.27)  27 JUN 2025 11:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,18 +737,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-(./resume/summary.tex
+(./resume/experience.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 16.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 4.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 28.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 10.
-) (./resume/experience.tex
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 28.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 28.
+(Font)              scaled to size 9.0pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not available
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
@@ -763,12 +762,12 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not availa
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
 (Font)              scaled to size 8.0pt on input line 28.
-) (./resume/education.tex) (./resume/skills.tex [1
-
-]
+) (./resume/education.tex) (./resume/skills.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/b/n' will be
 (Font)              scaled to size 9.0pt on input line 8.
-) (./resume/presentation.tex
+ [1
+
+]) (./resume/presentation.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 8.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
@@ -784,10 +783,10 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32785 strings out of 476683
- 670719 string characters out of 5804047
- 1896018 words of memory out of 5000000
- 52474 multiletter control sequences out of 15000+600000
+ 32780 strings out of 476683
+ 670626 string characters out of 5804047
+ 1897018 words of memory out of 5000000
+ 52472 multiletter control sequences out of 15000+600000
  514995 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  114i,11n,118p,544b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
