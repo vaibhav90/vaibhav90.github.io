@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vaibhav Kulkarni - Responsable d'ingénierie & biologiste computationnel autodidacte. Ingénierie logicielle, données & ML pour la découverte de médicaments.">
+    <meta property="og:locale" content="fr_CH">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vaibhav Kulkarni | Responsable d'ingénierie & biologiste computationnel">
+    <meta property="og:description" content="Ingénierie logicielle, données & ML appliquée à la biologie computationnelle & à la découverte de médicaments.">
+    <meta property="og:url" content="https://vaibhav90.github.io/fr/">
+    <meta property="og:image" content="https://vaibhav90.github.io/img/portrait.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="author" content="Vaibhav Kulkarni">
+    <link rel="alternate" hreflang="en" href="https://vaibhav90.github.io/">
+    <link rel="alternate" hreflang="fr" href="https://vaibhav90.github.io/fr/">
+    <link rel="alternate" hreflang="x-default" href="https://vaibhav90.github.io/">
+    <title>Vaibhav Kulkarni | Responsable d'ingénierie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        body {
+            background-color: #f1f5f9;
+            color: #0f172a;
+        }
+        
+        .btn-shadow {
+            box-shadow: inset 1px 1px 0 hsla(0,0%,100%,.4), inset -1px -1px 0 rgba(0,0,0,.3), 2px 2px 0 rgba(0,0,0,.2);
+        }
+        
+        .btn-shadow:hover {
+            box-shadow: inset 1px 1px 0 hsla(0,0%,100%,.3), inset -1px -1px 0 rgba(0,0,0,.3), 3px 3px 0 rgba(0,0,0,.2);
+        }
+        
+        .btn-shadow:active {
+            box-shadow: 1px 1px 0 hsla(0,0%,100%,.5), inset 1px 1px 3px rgba(0,0,0,.3);
+        }
+        
+        .section-card {
+            background: white;
+            border: 2px solid #0f172a;
+            position: relative;
+        }
+        
+        .section-card::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: calc(100% + 8px);
+            height: calc(100% + 8px);
+            background-image: url("data:image/svg+xml,%3Csvg width='2' height='2' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='0.5' fill='%230f172a' opacity='0.3'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            z-index: -1;
+            opacity: 0.6;
+        }
+        
+        summary { list-style: none; }
+        summary::-webkit-details-marker { display: none; }
+
+        .timeline-line {
+            border-left: 2px solid #0f172a;
+        }
+        
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            background: white;
+            border: 2px solid #0f172a;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white border-b-2 border-slate-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="relative w-7 h-7 bg-red-600 flex items-center justify-center">
+                    <div class="absolute w-1.5 h-5 bg-white"></div>
+                    <div class="absolute w-5 h-1.5 bg-white"></div>
+                </div>
+                <div class="flex items-center gap-6 md:gap-8">
+                <div class="hidden md:flex space-x-8 text-sm">
+                    <a href="#about" class="hover:text-slate-600 transition">à propos</a>
+                    <a href="#work" class="hover:text-slate-600 transition">travaux</a>
+                    <a href="#experience" class="hover:text-slate-600 transition">expérience</a>
+                    <a href="#skills" class="hover:text-slate-600 transition">compétences</a>
+                    <a href="#education" class="hover:text-slate-600 transition">formation</a>
+                    <a href="#publications" class="hover:text-slate-600 transition">publications</a>
+                    <a href="#certifications" class="hover:text-slate-600 transition">certifications</a>
+                    <a href="../resume_kvaibhav.pdf" target="_blank" class="hover:text-slate-600 transition">cv</a>
+                </div>
+                <div class="flex items-center text-xs border-2 border-slate-900 font-medium" role="group" aria-label="Langue"><a href="../" hreflang="en" lang="en" class="px-2 py-0.5 hover:bg-slate-100 transition" title="English">EN</a><span class="px-2 py-0.5 bg-slate-900 text-white" aria-current="true">FR</span></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-10 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start mb-8">
+                <div class="flex-shrink-0">
+                    <div class="section-card p-2 inline-block">
+                        <img src="../img/portrait.png" alt="Vaibhav Kulkarni" class="w-48 h-48 object-cover grayscale">
+                    </div>
+                </div>
+                <div class="flex-grow text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">Vaibhav Kulkarni</h1>
+                    <p class="text-xl md:text-2xl text-slate-700 mb-2">Responsable d'ingénierie | Ingénierie logicielle, données & ML pour la biologie computationnelle</p>
+                    <p class="text-sm text-slate-600 mb-2">Docteur en informatique · biologiste computationnel & bioinformaticien autodidacte</p>
+                    <p class="text-base text-slate-600 mb-6">📍 Suisse</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                <a href="mailto:vkulkarn@protonmail.com" 
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white border-2 border-slate-900 btn-shadow hover:bg-slate-800 transition text-sm font-medium">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                    e-mail
+                </a>
+                <a href="https://github.com/vaibhav90" target="_blank"
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 border-2 border-slate-900 btn-shadow hover:bg-slate-100 transition text-sm font-medium">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                    </svg>
+                    github
+                </a>
+                <a href="https://www.linkedin.com/in/vaibhav-kulkarni-b94891166/" target="_blank"
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 border-2 border-slate-900 btn-shadow hover:bg-slate-100 transition text-sm font-medium">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                    </svg>
+                    linkedin
+                </a>
+                <a href="https://scholar.google.ch/citations?user=e3sxhY0AAAAJ&hl=en" target="_blank"
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 border-2 border-slate-900 btn-shadow hover:bg-slate-100 transition text-sm font-medium">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"></path>
+                    </svg>
+                    scholar
+                </a>
+                <a href="../resume_kvaibhav.pdf" target="_blank"
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white border-2 border-slate-900 btn-shadow hover:bg-slate-800 transition text-sm font-medium">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"></path>
+                    </svg>
+                    télécharger le cv (EN)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 border-b-4 border-slate-900 inline-block pb-1">à propos</h2>
+            
+            <div class="section-card p-8 mb-8">
+                <div class="space-y-4 text-base leading-relaxed text-justify">
+                    <p>
+                        Je suis ingénieur logiciel de formation, titulaire d'un doctorat en informatique et de masters en systèmes embarqués et en systèmes d'information. Depuis plus de dix ans, je construis des logiciels, des plateformes de données et des systèmes d'apprentissage automatique en production, dans les sciences de la vie, la santé, la supply chain et l'IoT.
+                    </p>
+                    <p>
+                        Mon parcours réunit la recherche académique, la publication scientifique et l'industrie. C'est ce mélange que j'apporte : la rigueur de la recherche, alliée au pragmatisme de livrer des systèmes sur lesquels on compte chaque jour.
+                    </p>
+                    <p>
+                        En chemin, j'ai mis ces compétences au service de la biologie et me suis formé moi-même à la biologie computationnelle et à la bioinformatique. Chez <a href="https://www.debiopharm.com/" target="_blank" class="underline hover:text-slate-600">Debiopharm</a>, je dirige l'équipe données & bioinformatique et je travaille concrètement sur l'analyse des essais précliniques, la découverte de biomarqueurs, la développabilité des anticorps pour nos programmes d'anticorps conjugués (ADC) et la conception d'essais de bioéquivalence par simulation.
+                    </p>
+                    <p>
+                        J'aime bâtir des équipes pluridisciplinaires d'ingénieurs logiciel, d'ingénieurs en apprentissage automatique, de data scientists, de bioinformaticiens et de biologistes computationnels, où chaque discipline enrichit les autres.
+                    </p>
+                    <p>
+                        Je crois à l'apprentissage continu : je contribue à des <a href="https://github.com/vaibhav90" target="_blank" class="underline hover:text-slate-600">logiciels open source</a> et je participe à des compétitions de biologie computationnelle. Au cœur de mon travail : l'exigence d'un logiciel de qualité, guidée par le goût d'un code propre et pragmatique.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="section-card p-8">
+                <h3 class="text-xl font-bold mb-6">mon parcours</h3>
+                <ol class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4">
+                    <li class="relative md:pr-4 md:border-r md:border-dashed md:border-slate-400">
+                        <div class="flex items-center gap-3 mb-2">
+                            <svg viewBox="0 0 28 28" class="w-8 h-8 text-slate-900" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="14" height="14" rx="1"/><rect x="11" y="11" width="6" height="6"/><path d="M11 3v4M17 3v4M11 21v4M17 21v4M3 11h4M3 17h4M21 11h4M21 17h4"/></svg>
+                            <span class="text-xs text-slate-500">01 · 2011–2015</span>
+                        </div>
+                        <p class="text-sm font-bold mb-1 ">Systèmes embarqués & IoT</p>
+                        <p class="text-xs text-slate-600">BOLT IoT · TU Berlin · TU Eindhoven · ETH Zürich</p>
+                    </li>
+                    <li class="relative md:pr-4 md:border-r md:border-dashed md:border-slate-400">
+                        <div class="flex items-center gap-3 mb-2">
+                            <svg viewBox="0 0 28 28" class="w-8 h-8 text-slate-900" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="8" r="2"/><circle cx="5" cy="20" r="2"/><circle cx="14" cy="5" r="2"/><circle cx="14" cy="14" r="2"/><circle cx="14" cy="23" r="2"/><circle cx="23" cy="14" r="2"/><path d="M7 8l5-3M7 8l5 6M7 20l5-6M7 20l5 3M16 5l5 9M16 14h5M16 23l5-9"/></svg>
+                            <span class="text-xs text-slate-500">02 · 2015–2019</span>
+                        </div>
+                        <p class="text-sm font-bold mb-1 ">Recherche en apprentissage automatique</p>
+                        <p class="text-xs text-slate-600">Doctorat en informatique · Université de Lausanne</p>
+                    </li>
+                    <li class="relative md:pr-4 md:border-r md:border-dashed md:border-slate-400">
+                        <div class="flex items-center gap-3 mb-2">
+                            <svg viewBox="0 0 28 28" class="w-8 h-8 text-slate-900" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="14" cy="6" rx="9" ry="3"/><path d="M5 6v16c0 1.7 4 3 9 3s9-1.3 9-3V6M5 14c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+                            <span class="text-xs text-slate-500">03 · 2019–2022</span>
+                        </div>
+                        <p class="text-sm font-bold mb-1 ">Ingénierie logicielle & données</p>
+                        <p class="text-xs text-slate-600">GenLots · SOPHiA GENETICS</p>
+                    </li>
+                    <li class="relative md:pr-4 ">
+                        <div class="flex items-center gap-3 mb-2">
+                            <svg viewBox="0 0 28 28" class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3c0 6 12 8 12 14S8 19 8 25M20 3c0 6-12 8-12 14s12 2 12 8"/><path d="M10 7h8M9 12h10M9 16h10M10 21h8"/></svg>
+                            <span class="text-xs text-slate-500">04 · 2022–aujourd'hui</span>
+                        </div>
+                        <p class="text-sm font-bold mb-1 text-red-600">Données, IA & biologie computationnelle</p>
+                        <p class="text-xs text-slate-600">Debiopharm</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Computational Biology Section -->
+    <section id="work" class="py-10 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-4 border-b-4 border-slate-900 inline-block pb-1">biologie computationnelle</h2>
+            <p class="text-base text-slate-700 mb-8 max-w-2xl">En plus de construire et d'exploiter nos plateformes de données et d'analyse, du référentiel central de données à nos entrepôts de données, voici les problèmes scientifiques sur lesquels mon équipe et moi travaillons chaque jour, de la conception d'anticorps jusqu'à la clinique.</p>
+            <p class="text-xs text-slate-500 -mt-6 mb-8">Les illustrations utilisent des données d'exemple simulées.</p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="section-card">
+                    <div class="border-b-2 border-slate-900"><svg viewBox="0 0 320 176" role="img" aria-label="Schéma d'un anticorps conjugué avec analyse des points faibles de séquence et barres de risque de développabilité" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto block"><rect x="0" y="0" width="320" height="176" fill="#f1f5f9"/><g><rect x="73" y="100" width="22" height="26" rx="7" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="84.0" y="115.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >CH2</text></g><g><rect x="73" y="128" width="22" height="26" rx="7" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="84.0" y="143.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >CH3</text></g><g><rect x="97" y="100" width="22" height="26" rx="7" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="108.0" y="115.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >CH2</text></g><g><rect x="97" y="128" width="22" height="26" rx="7" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="108.0" y="143.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >CH3</text></g><line x1="84" y1="100" x2="84" y2="86" stroke="#0f172a" stroke-width="1.3"/><line x1="108" y1="100" x2="108" y2="86" stroke="#0f172a" stroke-width="1.3"/><line x1="84" y1="92" x2="108" y2="92" stroke="#0f172a" stroke-width="1" stroke-dasharray="2 1.5"/><g transform="rotate(-32 84 86)"><g><rect x="72" y="32" width="22" height="26" rx="7" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="83.0" y="47.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >VH</text></g><g><rect x="72" y="60" width="22" height="26" rx="7" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="83.0" y="75.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >CH1</text></g><g><rect x="48" y="32" width="22" height="26" rx="7" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.3"/><text x="59.0" y="47.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >VL</text></g><g><rect x="48" y="60" width="22" height="26" rx="7" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.3"/><text x="59.0" y="75.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >CL</text></g><path d="M77 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M83 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M89 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M53 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M59 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M65 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/></g><g transform="rotate(32 108 86)"><g><rect x="98" y="32" width="22" height="26" rx="7" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="109.0" y="47.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >VH</text></g><g><rect x="98" y="60" width="22" height="26" rx="7" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="109.0" y="75.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >CH1</text></g><g><rect x="122" y="32" width="22" height="26" rx="7" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.3"/><text x="133.0" y="47.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >VL</text></g><g><rect x="122" y="60" width="22" height="26" rx="7" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.3"/><text x="133.0" y="75.8" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >CL</text></g><path d="M103 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M109 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M115 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M127 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M133 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/><path d="M139 32 q2 -6 4 0" fill="none" stroke="#dc2626" stroke-width="1.2"/></g><path d="M73 106 q-4 -5 -8 0 t-6 0" fill="none" stroke="#0f172a" stroke-width="0.9"/><circle cx="56" cy="106" r="3.6" fill="#dc2626" stroke="#0f172a" stroke-width="0.8"/><path d="M119 106 q4 -5 8 0 t6 0" fill="none" stroke="#0f172a" stroke-width="0.9"/><circle cx="136" cy="106" r="3.6" fill="#dc2626" stroke="#0f172a" stroke-width="0.8"/><path d="M73 120 q-4 -5 -8 0 t-6 0" fill="none" stroke="#0f172a" stroke-width="0.9"/><circle cx="56" cy="120" r="3.6" fill="#dc2626" stroke="#0f172a" stroke-width="0.8"/><path d="M119 120 q4 -5 8 0 t6 0" fill="none" stroke="#0f172a" stroke-width="0.9"/><circle cx="136" cy="120" r="3.6" fill="#dc2626" stroke="#0f172a" stroke-width="0.8"/><text x="96.0" y="170.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="700" >ADC · DAR 4</text><text x="190.0" y="26.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="700" >points faibles de séquence</text><text x="192.6" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >E</text><text x="199.8" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >V</text><text x="207.0" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >Q</text><text x="214.2" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >L</text><text x="221.4" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >V</text><text x="228.6" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >E</text><text x="235.8" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >S</text><text x="243.0" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >G</text><text x="250.2" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >G</text><text x="257.4" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >G</text><text x="264.6" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >L</text><text x="271.8" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >V</text><text x="279.0" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >Q</text><text x="286.2" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >P</text><text x="293.4" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >G</text><text x="300.6" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >G</text><text x="307.8" y="44.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >S</text><text x="192.6" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >L</text><text x="199.8" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >R</text><text x="207.0" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >L</text><text x="214.2" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >S</text><text x="221.4" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >C</text><text x="228.6" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >A</text><text x="235.8" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >A</text><text x="243.0" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >S</text><text x="250.2" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >G</text><text x="257.4" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >F</text><rect x="261.0" y="50" width="7.4" height="11" fill="#dc2626" fill-opacity="0.15" stroke="#dc2626" stroke-width="0.8"/><text x="264.6" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#dc2626" font-weight="400" >N</text><rect x="268.2" y="50" width="7.4" height="11" fill="#dc2626" fill-opacity="0.15" stroke="#dc2626" stroke-width="0.8"/><text x="271.8" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#dc2626" font-weight="400" >G</text><text x="279.0" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >S</text><text x="286.2" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >Y</text><text x="293.4" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >A</text><text x="300.6" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >M</text><text x="307.8" y="58.0" font-size="7" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >S</text><text x="190.0" y="84.0" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#dc2626" font-weight="400" >risque de désamidation N-G</text><text x="190.0" y="102.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="700" >risque CMC prédit</text><text x="190.0" y="116.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#64748b" font-weight="400" >HIC</text><rect x="230" y="110" width="80" height="7" fill="white" stroke="#0f172a" stroke-width="0.7"/><rect x="230" y="110" width="24.0" height="7" fill="#0f172a"/><text x="190.0" y="128.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#64748b" font-weight="400" >Tm</text><rect x="230" y="122" width="80" height="7" fill="white" stroke="#0f172a" stroke-width="0.7"/><rect x="230" y="122" width="17.6" height="7" fill="#0f172a"/><text x="190.0" y="140.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#64748b" font-weight="400" >PR</text><rect x="230" y="134" width="80" height="7" fill="white" stroke="#0f172a" stroke-width="0.7"/><rect x="230" y="134" width="44.0" height="7" fill="#dc2626"/><text x="190.0" y="152.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#64748b" font-weight="400" >AC-SINS</text><rect x="230" y="146" width="80" height="7" fill="white" stroke="#0f172a" stroke-width="0.7"/><rect x="230" y="146" width="32.0" height="7" fill="#0f172a"/><text x="190.0" y="164.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#64748b" font-weight="400" >titre</text><rect x="230" y="158" width="80" height="7" fill="white" stroke="#0f172a" stroke-width="0.7"/><rect x="230" y="158" width="14.4" height="7" fill="#0f172a"/></svg></div>
+                    <div class="p-6">
+                        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">ingénierie des protéines</p>
+                        <h3 class="text-base font-bold mb-2">Développabilité des anticorps pour les ADC</h3>
+                        <p class="text-sm text-slate-700">Évaluation in silico de la développabilité et aide à la conception pour les programmes d'anticorps conjugués : modèles de langage protéiques, modélisation structurale et détection des modifications post-traductionnelles pour classer le risque CMC des candidats et des formats d'anticorps.</p>
+                    </div>
+                </article>
+                <article class="section-card">
+                    <div class="border-b-2 border-slate-900"><svg viewBox="0 0 320 176" role="img" aria-label="Courbes dose-réponse de cytotoxicité avec IC50 pour un anticorps conjugué et des contrôles" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto block"><rect x="0" y="0" width="320" height="176" fill="#f1f5f9"/><line x1="46" y1="140" x2="300" y2="140" stroke="#0f172a" stroke-width="1.2"/><line x1="46" y1="14" x2="46" y2="140" stroke="#0f172a" stroke-width="1.2"/><line x1="46.0" y1="140" x2="46.0" y2="143" stroke="#0f172a"/><text x="46.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >10⁻³</text><line x1="88.3" y1="140" x2="88.3" y2="143" stroke="#0f172a"/><text x="88.3" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >10⁻²</text><line x1="130.7" y1="140" x2="130.7" y2="143" stroke="#0f172a"/><text x="130.7" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >10⁻¹</text><line x1="173.0" y1="140" x2="173.0" y2="143" stroke="#0f172a"/><text x="173.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >1</text><line x1="215.3" y1="140" x2="215.3" y2="143" stroke="#0f172a"/><text x="215.3" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >10</text><line x1="257.7" y1="140" x2="257.7" y2="143" stroke="#0f172a"/><text x="257.7" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >10²</text><line x1="300.0" y1="140" x2="300.0" y2="143" stroke="#0f172a"/><text x="300.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >10³</text><line x1="43" y1="140.0" x2="46" y2="140.0" stroke="#0f172a"/><line x1="46" y1="140.0" x2="300" y2="140.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="143.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >0</text><line x1="43" y1="98.0" x2="46" y2="98.0" stroke="#0f172a"/><line x1="46" y1="98.0" x2="300" y2="98.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="101.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >50</text><line x1="43" y1="56.0" x2="46" y2="56.0" stroke="#0f172a"/><line x1="46" y1="56.0" x2="300" y2="56.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="59.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >100</text><text x="173.0" y="164.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >concentration (nM)</text><text x="11.0" y="77.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" transform="rotate(-90 11 77.0)">viabilité (%)</text><polyline points="46.0,56.3 48.1,56.4 50.2,56.4 52.3,56.5 54.5,56.6 56.6,56.6 58.7,56.7 60.8,56.8 62.9,57.0 65.1,57.1 67.2,57.3 69.3,57.4 71.4,57.7 73.5,57.9 75.6,58.2 77.8,58.5 79.9,58.8 82.0,59.2 84.1,59.7 86.2,60.2 88.3,60.8 90.5,61.4 92.6,62.2 94.7,63.0 96.8,64.0 98.9,65.0 101.0,66.2 103.2,67.5 105.3,68.9 107.4,70.5 109.5,72.2 111.6,74.1 113.7,76.1 115.9,78.2 118.0,80.5 120.1,82.9 122.2,85.5 124.3,88.1 126.4,90.8 128.6,93.5 130.7,96.3 132.8,99.1 134.9,101.9 137.0,104.6 139.1,107.2 141.2,109.7 143.4,112.1 145.5,114.4 147.6,116.6 149.7,118.6 151.8,120.5 154.0,122.2 156.1,123.7 158.2,125.2 160.3,126.5 162.4,127.6 164.5,128.7 166.7,129.6 168.8,130.4 170.9,131.2 173.0,131.9 175.1,132.4 177.2,133.0 179.3,133.4 181.5,133.8 183.6,134.2 185.7,134.5 187.8,134.8 189.9,135.0 192.1,135.2 194.2,135.4 196.3,135.5 198.4,135.7 200.5,135.8 202.6,135.9 204.8,136.0 206.9,136.1 209.0,136.2 211.1,136.2 213.2,136.3 215.3,136.3 217.4,136.4 219.6,136.4 221.7,136.4 223.8,136.5 225.9,136.5 228.0,136.5 230.2,136.5 232.3,136.5 234.4,136.5 236.5,136.6 238.6,136.6 240.7,136.6 242.8,136.6 245.0,136.6 247.1,136.6 249.2,136.6 251.3,136.6 253.4,136.6 255.6,136.6 257.7,136.6 259.8,136.6 261.9,136.6 264.0,136.6 266.1,136.6 268.2,136.6 270.4,136.6 272.5,136.6 274.6,136.6 276.7,136.6 278.8,136.6 281.0,136.6 283.1,136.6 285.2,136.6 287.3,136.6 289.4,136.6 291.5,136.6 293.7,136.6 295.8,136.6 297.9,136.6 300.0,136.6" fill="none" stroke="#dc2626" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="1"/><line x1="58.7" y1="60.0" x2="58.7" y2="51.0" stroke="#dc2626" stroke-width="0.8"/><circle cx="58.7" cy="55.5" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><line x1="86.2" y1="63.9" x2="86.2" y2="56.3" stroke="#dc2626" stroke-width="0.8"/><circle cx="86.2" cy="60.1" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><line x1="113.7" y1="81.8" x2="113.7" y2="71.7" stroke="#dc2626" stroke-width="0.8"/><circle cx="113.7" cy="76.8" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><line x1="141.2" y1="114.0" x2="141.2" y2="108.2" stroke="#dc2626" stroke-width="0.8"/><circle cx="141.2" cy="111.1" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><line x1="168.8" y1="135.2" x2="168.8" y2="128.9" stroke="#dc2626" stroke-width="0.8"/><circle cx="168.8" cy="132.1" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><line x1="196.3" y1="139.9" x2="196.3" y2="133.5" stroke="#dc2626" stroke-width="0.8"/><circle cx="196.3" cy="136.7" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><line x1="223.8" y1="142.4" x2="223.8" y2="135.8" stroke="#dc2626" stroke-width="0.8"/><circle cx="223.8" cy="139.1" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><line x1="251.3" y1="141.8" x2="251.3" y2="133.9" stroke="#dc2626" stroke-width="0.8"/><circle cx="251.3" cy="137.9" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><line x1="278.8" y1="141.3" x2="278.8" y2="135.9" stroke="#dc2626" stroke-width="0.8"/><circle cx="278.8" cy="138.6" r="2" fill="white" stroke="#dc2626" stroke-width="1.1"/><polyline points="46.0,56.0 48.1,56.0 50.2,56.0 52.3,56.0 54.5,56.0 56.6,56.0 58.7,56.0 60.8,56.0 62.9,56.0 65.1,56.0 67.2,56.0 69.3,56.0 71.4,56.0 73.5,56.0 75.6,56.0 77.8,56.0 79.9,56.0 82.0,56.0 84.1,56.0 86.2,56.0 88.3,56.0 90.5,56.0 92.6,56.0 94.7,56.0 96.8,56.0 98.9,56.0 101.0,56.0 103.2,56.0 105.3,56.0 107.4,56.0 109.5,56.0 111.6,56.0 113.7,56.0 115.9,56.0 118.0,56.0 120.1,56.0 122.2,56.1 124.3,56.1 126.4,56.1 128.6,56.1 130.7,56.1 132.8,56.1 134.9,56.1 137.0,56.1 139.1,56.1 141.2,56.1 143.4,56.2 145.5,56.2 147.6,56.2 149.7,56.2 151.8,56.3 154.0,56.3 156.1,56.3 158.2,56.4 160.3,56.4 162.4,56.4 164.5,56.5 166.7,56.6 168.8,56.6 170.9,56.7 173.0,56.8 175.1,56.9 177.2,57.0 179.3,57.1 181.5,57.2 183.6,57.4 185.7,57.5 187.8,57.7 189.9,57.9 192.1,58.1 194.2,58.3 196.3,58.6 198.4,58.9 200.5,59.2 202.6,59.6 204.8,60.0 206.9,60.4 209.0,60.8 211.1,61.3 213.2,61.8 215.3,62.4 217.4,63.0 219.6,63.7 221.7,64.4 223.8,65.1 225.9,65.9 228.0,66.7 230.2,67.5 232.3,68.3 234.4,69.2 236.5,70.1 238.6,71.0 240.7,72.0 242.8,72.9 245.0,73.8 247.1,74.7 249.2,75.6 251.3,76.4 253.4,77.3 255.6,78.1 257.7,78.8 259.8,79.6 261.9,80.3 264.0,80.9 266.1,81.5 268.2,82.1 270.4,82.6 272.5,83.1 274.6,83.6 276.7,84.0 278.8,84.4 281.0,84.7 283.1,85.0 285.2,85.3 287.3,85.6 289.4,85.8 291.5,86.0 293.7,86.2 295.8,86.4 297.9,86.6 300.0,86.7" fill="none" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="1"/><line x1="58.7" y1="61.9" x2="58.7" y2="54.1" stroke="#0f172a" stroke-width="0.8"/><circle cx="58.7" cy="58.0" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><line x1="86.2" y1="61.1" x2="86.2" y2="52.4" stroke="#0f172a" stroke-width="0.8"/><circle cx="86.2" cy="56.8" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><line x1="113.7" y1="57.6" x2="113.7" y2="50.4" stroke="#0f172a" stroke-width="0.8"/><circle cx="113.7" cy="54.0" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><line x1="141.2" y1="63.2" x2="141.2" y2="54.5" stroke="#0f172a" stroke-width="0.8"/><circle cx="141.2" cy="58.8" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><line x1="168.8" y1="58.4" x2="168.8" y2="51.4" stroke="#0f172a" stroke-width="0.8"/><circle cx="168.8" cy="54.9" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><line x1="196.3" y1="60.8" x2="196.3" y2="54.3" stroke="#0f172a" stroke-width="0.8"/><circle cx="196.3" cy="57.5" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><line x1="223.8" y1="66.9" x2="223.8" y2="57.7" stroke="#0f172a" stroke-width="0.8"/><circle cx="223.8" cy="62.3" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><line x1="251.3" y1="79.4" x2="251.3" y2="69.5" stroke="#0f172a" stroke-width="0.8"/><circle cx="251.3" cy="74.5" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><line x1="278.8" y1="90.0" x2="278.8" y2="82.3" stroke="#0f172a" stroke-width="0.8"/><circle cx="278.8" cy="86.1" r="2" fill="white" stroke="#0f172a" stroke-width="1.1"/><polyline points="46.0,56.0 48.1,56.0 50.2,56.0 52.3,56.0 54.5,56.0 56.6,56.0 58.7,56.0 60.8,56.0 62.9,56.0 65.1,56.0 67.2,56.0 69.3,56.0 71.4,56.0 73.5,56.0 75.6,56.0 77.8,56.0 79.9,56.0 82.0,56.0 84.1,56.0 86.2,56.0 88.3,56.0 90.5,56.0 92.6,56.0 94.7,56.0 96.8,56.0 98.9,56.0 101.0,56.0 103.2,56.0 105.3,56.0 107.4,56.0 109.5,56.0 111.6,56.0 113.7,56.0 115.9,56.0 118.0,56.0 120.1,56.0 122.2,56.0 124.3,56.0 126.4,56.0 128.6,56.0 130.7,56.0 132.8,56.0 134.9,56.0 137.0,56.0 139.1,56.0 141.2,56.0 143.4,56.0 145.5,56.0 147.6,56.0 149.7,56.0 151.8,56.0 154.0,56.0 156.1,56.0 158.2,56.0 160.3,56.0 162.4,56.0 164.5,56.0 166.7,56.0 168.8,56.0 170.9,56.0 173.0,56.0 175.1,56.0 177.2,56.0 179.3,56.0 181.5,56.0 183.6,56.0 185.7,56.0 187.8,56.0 189.9,56.0 192.1,56.0 194.2,56.0 196.3,56.0 198.4,56.0 200.5,56.0 202.6,56.1 204.8,56.1 206.9,56.1 209.0,56.1 211.1,56.1 213.2,56.1 215.3,56.1 217.4,56.1 219.6,56.1 221.7,56.1 223.8,56.2 225.9,56.2 228.0,56.2 230.2,56.2 232.3,56.2 234.4,56.3 236.5,56.3 238.6,56.3 240.7,56.4 242.8,56.4 245.0,56.5 247.1,56.5 249.2,56.6 251.3,56.6 253.4,56.7 255.6,56.7 257.7,56.8 259.8,56.9 261.9,57.0 264.0,57.0 266.1,57.1 268.2,57.2 270.4,57.3 272.5,57.4 274.6,57.5 276.7,57.6 278.8,57.7 281.0,57.8 283.1,57.9 285.2,58.0 287.3,58.1 289.4,58.2 291.5,58.2 293.7,58.3 295.8,58.4 297.9,58.5 300.0,58.6" fill="none" stroke="#64748b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="1" stroke-dasharray="3 2"/><line x1="58.7" y1="59.0" x2="58.7" y2="49.9" stroke="#64748b" stroke-width="0.8"/><circle cx="58.7" cy="54.4" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="86.2" y1="59.6" x2="86.2" y2="53.9" stroke="#64748b" stroke-width="0.8"/><circle cx="86.2" cy="56.7" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="113.7" y1="57.9" x2="113.7" y2="52.4" stroke="#64748b" stroke-width="0.8"/><circle cx="113.7" cy="55.2" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="141.2" y1="57.2" x2="141.2" y2="52.1" stroke="#64748b" stroke-width="0.8"/><circle cx="141.2" cy="54.6" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="168.8" y1="60.0" x2="168.8" y2="52.6" stroke="#64748b" stroke-width="0.8"/><circle cx="168.8" cy="56.3" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="196.3" y1="62.3" x2="196.3" y2="54.9" stroke="#64748b" stroke-width="0.8"/><circle cx="196.3" cy="58.6" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="223.8" y1="59.6" x2="223.8" y2="52.7" stroke="#64748b" stroke-width="0.8"/><circle cx="223.8" cy="56.2" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="251.3" y1="58.7" x2="251.3" y2="49.2" stroke="#64748b" stroke-width="0.8"/><circle cx="251.3" cy="54.0" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="278.8" y1="58.2" x2="278.8" y2="51.9" stroke="#64748b" stroke-width="0.8"/><circle cx="278.8" cy="55.1" r="2" fill="white" stroke="#64748b" stroke-width="1.1"/><line x1="46" y1="96.3" x2="130.7" y2="96.3" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="3 2"/><line x1="130.7" y1="96.3" x2="130.7" y2="140" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="3 2"/><text x="126.7" y="108.3" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#dc2626" font-weight="700" >IC₅₀</text><line x1="56" y1="22" x2="70" y2="22" stroke="#dc2626" stroke-width="1.6"/><text x="74.0" y="25.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >ADC</text><line x1="56" y1="34" x2="70" y2="34" stroke="#0f172a" stroke-width="1.6"/><text x="74.0" y="37.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >mAb nu</text><line x1="56" y1="46" x2="70" y2="46" stroke="#64748b" stroke-width="1.6" stroke-dasharray="3 2"/><text x="74.0" y="49.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >contrôle isotypique</text></svg></div>
+                    <div class="p-6">
+                        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">pharmacologie in vitro</p>
+                        <h3 class="text-base font-bold mb-2">Analyse des essais in vitro</h3>
+                        <p class="text-sm text-slate-700">Analyse des données d'essais in vitro de nos programmes : cytotoxicité dose-réponse et IC50, internalisation des anticorps et liaison à la cible, avec ajustement de courbes standardisé et contrôle qualité entre essais et CRO.</p>
+                    </div>
+                </article>
+                <article class="section-card">
+                    <div class="border-b-2 border-slate-900"><svg viewBox="0 0 320 176" role="img" aria-label="Courbes de croissance tumorale des bras véhicule et traité d'une étude d'efficacité préclinique" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto block"><rect x="0" y="0" width="320" height="176" fill="#f1f5f9"/><line x1="46" y1="140" x2="300" y2="140" stroke="#0f172a" stroke-width="1.2"/><line x1="46" y1="14" x2="46" y2="140" stroke="#0f172a" stroke-width="1.2"/><line x1="46.0" y1="140" x2="46.0" y2="143" stroke="#0f172a"/><text x="46.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >0</text><line x1="109.5" y1="140" x2="109.5" y2="143" stroke="#0f172a"/><text x="109.5" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >7</text><line x1="173.0" y1="140" x2="173.0" y2="143" stroke="#0f172a"/><text x="173.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >14</text><line x1="236.5" y1="140" x2="236.5" y2="143" stroke="#0f172a"/><text x="236.5" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >21</text><line x1="300.0" y1="140" x2="300.0" y2="143" stroke="#0f172a"/><text x="300.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >28</text><line x1="43" y1="140.0" x2="46" y2="140.0" stroke="#0f172a"/><line x1="46" y1="140.0" x2="300" y2="140.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="143.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >0</text><line x1="43" y1="100.6" x2="46" y2="100.6" stroke="#0f172a"/><line x1="46" y1="100.6" x2="300" y2="100.6" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="103.6" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >500</text><line x1="43" y1="61.2" x2="46" y2="61.2" stroke="#0f172a"/><line x1="46" y1="61.2" x2="300" y2="61.2" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="64.2" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >1000</text><line x1="43" y1="21.9" x2="46" y2="21.9" stroke="#0f172a"/><line x1="46" y1="21.9" x2="300" y2="21.9" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="24.9" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >1500</text><text x="173.0" y="164.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >jours après administration</text><text x="11.0" y="77.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" transform="rotate(-90 11 77.0)">VT (mm³)</text><polyline points="46.0,128.3 64.1,127.1 82.3,124.4 100.4,122.1 118.6,119.8 136.7,115.6 154.9,112.7 173.0,107.3 191.1,103.1 209.3,97.0 227.4,88.7 245.6,78.5 263.7,72.4 281.9,60.8 300.0,45.0" fill="none" stroke="#0f172a" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,126.1 64.1,122.9 82.3,121.2 100.4,116.3 118.6,113.2 136.7,108.7 154.9,103.1 173.0,95.7 191.1,85.5 209.3,78.8 227.4,65.2 245.6,51.2 263.7,37.3 281.9,16.9 300.0,14.0" fill="none" stroke="#0f172a" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,129.4 64.1,127.9 82.3,126.0 100.4,123.4 118.6,120.8 136.7,117.9 154.9,113.3 173.0,109.1 191.1,105.3 209.3,98.5 227.4,91.9 245.6,82.4 263.7,73.7 281.9,65.5 300.0,48.4" fill="none" stroke="#0f172a" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,129.1 64.1,127.8 82.3,125.3 100.4,123.3 118.6,119.4 136.7,115.6 154.9,111.8 173.0,106.0 191.1,101.9 209.3,93.8 227.4,86.2 245.6,76.9 263.7,66.6 281.9,51.2 300.0,34.8" fill="none" stroke="#0f172a" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,128.3 64.1,125.4 82.3,122.8 100.4,119.0 118.6,115.4 136.7,112.1 154.9,106.6 173.0,99.5 191.1,94.4 209.3,84.0 227.4,75.1 245.6,63.4 263.7,49.6 281.9,26.5 300.0,14.0" fill="none" stroke="#0f172a" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,128.5 64.1,127.3 82.3,124.6 100.4,121.8 118.6,118.1 136.7,114.5 154.9,109.9 173.0,106.3 191.1,100.1 209.3,93.4 227.4,83.0 245.6,72.7 263.7,66.0 281.9,53.0 300.0,37.5" fill="none" stroke="#0f172a" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,128.3 64.1,126.4 82.3,124.0 100.4,121.0 118.6,117.8 136.7,114.1 154.9,109.6 173.0,104.0 191.1,98.4 209.3,90.9 227.4,81.7 245.6,70.9 263.7,60.9 281.9,45.6 300.0,29.6" fill="none" stroke="#0f172a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="1"/><circle cx="46.0" cy="128.3" r="2.2" fill="white" stroke="#0f172a" stroke-width="1.2"/><circle cx="82.3" cy="124.0" r="2.2" fill="white" stroke="#0f172a" stroke-width="1.2"/><circle cx="118.6" cy="117.8" r="2.2" fill="white" stroke="#0f172a" stroke-width="1.2"/><circle cx="154.9" cy="109.6" r="2.2" fill="white" stroke="#0f172a" stroke-width="1.2"/><circle cx="191.1" cy="98.4" r="2.2" fill="white" stroke="#0f172a" stroke-width="1.2"/><circle cx="227.4" cy="81.7" r="2.2" fill="white" stroke="#0f172a" stroke-width="1.2"/><circle cx="263.7" cy="60.9" r="2.2" fill="white" stroke="#0f172a" stroke-width="1.2"/><circle cx="300.0" cy="29.6" r="2.2" fill="white" stroke="#0f172a" stroke-width="1.2"/><polyline points="46.0,128.8 64.1,129.0 82.3,129.2 100.4,128.7 118.6,128.7 136.7,128.5 154.9,128.1 173.0,128.3 191.1,128.4 209.3,128.2 227.4,128.1 245.6,128.6 263.7,127.8 281.9,127.8 300.0,127.7" fill="none" stroke="#dc2626" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,126.7 64.1,127.1 82.3,126.5 100.4,127.1 118.6,127.1 136.7,127.0 154.9,127.0 173.0,126.8 191.1,127.1 209.3,127.2 227.4,127.1 245.6,127.1 263.7,126.8 281.9,127.2 300.0,126.3" fill="none" stroke="#dc2626" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,127.6 64.1,127.7 82.3,127.9 100.4,128.3 118.6,127.8 136.7,127.8 154.9,128.5 173.0,128.6 191.1,129.2 209.3,129.3 227.4,129.3 245.6,129.5 263.7,129.2 281.9,129.9 300.0,130.1" fill="none" stroke="#dc2626" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,126.4 64.1,125.9 82.3,126.3 100.4,125.7 118.6,125.0 136.7,125.0 154.9,125.1 173.0,125.5 191.1,125.3 209.3,125.4 227.4,124.6 245.6,124.7 263.7,124.3 281.9,124.8 300.0,124.8" fill="none" stroke="#dc2626" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,126.2 64.1,125.7 82.3,125.2 100.4,124.8 118.6,124.9 136.7,124.0 154.9,123.6 173.0,123.5 191.1,122.9 209.3,121.9 227.4,121.3 245.6,119.9 263.7,118.8 281.9,118.9 300.0,117.3" fill="none" stroke="#dc2626" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,126.0 64.1,125.7 82.3,125.2 100.4,124.8 118.6,124.2 136.7,123.1 154.9,122.2 173.0,121.7 191.1,121.6 209.3,120.7 227.4,119.8 245.6,120.3 263.7,118.7 281.9,117.5 300.0,117.0" fill="none" stroke="#dc2626" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/><polyline points="46.0,127.0 64.1,126.8 82.3,126.7 100.4,126.6 118.6,126.3 136.7,125.9 154.9,125.8 173.0,125.7 191.1,125.7 209.3,125.5 227.4,125.0 245.6,125.0 263.7,124.3 281.9,124.3 300.0,123.9" fill="none" stroke="#dc2626" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="1"/><circle cx="46.0" cy="127.0" r="2.2" fill="white" stroke="#dc2626" stroke-width="1.2"/><circle cx="82.3" cy="126.7" r="2.2" fill="white" stroke="#dc2626" stroke-width="1.2"/><circle cx="118.6" cy="126.3" r="2.2" fill="white" stroke="#dc2626" stroke-width="1.2"/><circle cx="154.9" cy="125.8" r="2.2" fill="white" stroke="#dc2626" stroke-width="1.2"/><circle cx="191.1" cy="125.7" r="2.2" fill="white" stroke="#dc2626" stroke-width="1.2"/><circle cx="227.4" cy="125.0" r="2.2" fill="white" stroke="#dc2626" stroke-width="1.2"/><circle cx="263.7" cy="124.3" r="2.2" fill="white" stroke="#dc2626" stroke-width="1.2"/><circle cx="300.0" cy="123.9" r="2.2" fill="white" stroke="#dc2626" stroke-width="1.2"/><line x1="56" y1="24" x2="70" y2="24" stroke="#0f172a" stroke-width="1.6"/><text x="74.0" y="27.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >véhicule</text><line x1="56" y1="36" x2="70" y2="36" stroke="#dc2626" stroke-width="1.6"/><text x="74.0" y="39.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >traité</text></svg></div>
+                    <div class="p-6">
+                        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">pharmacologie in vivo</p>
+                        <h3 class="text-base font-bold mb-2">Analyse des essais précliniques</h3>
+                        <p class="text-sm text-slate-700">Je dirige l'analyse et la visualisation des données des essais d'efficacité précliniques chez Debiopharm : harmonisation des données des CRO, calcul de l'inhibition de la croissance tumorale, de l'AUC et du volume tumoral relatif, et tableaux de bord interactifs sur des modèles murins PDX et CDX.</p>
+                    </div>
+                </article>
+                <article class="section-card">
+                    <div class="border-b-2 border-slate-900"><svg viewBox="0 0 320 176" role="img" aria-label="Volcano plot de l'expression génique différentielle" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto block"><rect x="0" y="0" width="320" height="176" fill="#f1f5f9"/><line x1="46" y1="140" x2="300" y2="140" stroke="#0f172a" stroke-width="1.2"/><line x1="46" y1="12" x2="46" y2="140" stroke="#0f172a" stroke-width="1.2"/><line x1="46.0" y1="140" x2="46.0" y2="143" stroke="#0f172a"/><text x="46.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >-4</text><line x1="109.5" y1="140" x2="109.5" y2="143" stroke="#0f172a"/><text x="109.5" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >-2</text><line x1="173.0" y1="140" x2="173.0" y2="143" stroke="#0f172a"/><text x="173.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >0</text><line x1="236.5" y1="140" x2="236.5" y2="143" stroke="#0f172a"/><text x="236.5" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >2</text><line x1="300.0" y1="140" x2="300.0" y2="143" stroke="#0f172a"/><text x="300.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >4</text><line x1="43" y1="140.0" x2="46" y2="140.0" stroke="#0f172a"/><line x1="46" y1="140.0" x2="300" y2="140.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="143.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >0</text><line x1="43" y1="76.0" x2="46" y2="76.0" stroke="#0f172a"/><line x1="46" y1="76.0" x2="300" y2="76.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="79.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >5</text><line x1="43" y1="12.0" x2="46" y2="12.0" stroke="#0f172a"/><line x1="46" y1="12.0" x2="300" y2="12.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="15.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >10</text><text x="173.0" y="164.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >log₂ fold change</text><text x="11.0" y="76.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" transform="rotate(-90 11 76.0)">−log₁₀ p</text><line x1="141.2" y1="12" x2="141.2" y2="140" stroke="#64748b" stroke-width="0.7" stroke-dasharray="3 2"/><line x1="204.8" y1="12" x2="204.8" y2="140" stroke="#64748b" stroke-width="0.7" stroke-dasharray="3 2"/><line x1="46" y1="114.4" x2="300" y2="114.4" stroke="#64748b" stroke-width="0.7" stroke-dasharray="3 2"/><circle cx="132.2" cy="112.1" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="185.6" cy="131.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="188.9" cy="127.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="209.6" cy="130.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="224.1" cy="113.2" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="205.8" cy="112.3" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="146.8" cy="135.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="135.1" cy="125.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="182.1" cy="134.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="196.1" cy="124.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="125.7" cy="113.6" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="167.3" cy="136.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="171.4" cy="137.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="169.9" cy="135.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="185.3" cy="132.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="235.4" cy="126.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="156.2" cy="129.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="206.3" cy="127.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="168.9" cy="136.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="198.6" cy="120.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="188.6" cy="135.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="182.4" cy="136.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="179.9" cy="133.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="192.7" cy="130.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="223.4" cy="124.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="179.1" cy="129.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="198.7" cy="124.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="181.2" cy="131.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="205.4" cy="123.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="178.9" cy="135.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="198.1" cy="134.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="210.2" cy="124.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="196.6" cy="129.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="210.1" cy="116.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="163.3" cy="137.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="224.6" cy="122.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="139.5" cy="115.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="199.9" cy="121.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="250.1" cy="101.7" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="256.0" cy="100.5" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="193.6" cy="127.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="150.2" cy="128.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="157.2" cy="135.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="112.3" cy="104.8" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="149.2" cy="128.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="199.3" cy="132.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="175.7" cy="135.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="157.1" cy="127.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="165.2" cy="130.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="157.1" cy="137.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="131.8" cy="123.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="147.1" cy="129.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="91.5" cy="87.7" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="119.4" cy="122.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="284.1" cy="34.6" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="168.8" cy="128.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="121.2" cy="114.3" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="227.8" cy="109.5" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="133.6" cy="113.2" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="149.9" cy="126.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="149.9" cy="129.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="241.6" cy="92.0" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="170.1" cy="133.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="113.7" cy="118.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="196.2" cy="130.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="149.1" cy="126.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="175.9" cy="129.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="172.8" cy="132.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="178.0" cy="137.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="213.6" cy="116.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="145.7" cy="126.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="184.3" cy="126.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="206.6" cy="119.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="147.8" cy="130.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="158.5" cy="126.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="153.3" cy="134.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="93.8" cy="96.6" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="180.7" cy="133.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="206.6" cy="121.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="209.4" cy="133.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="168.9" cy="139.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="161.9" cy="129.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="131.1" cy="132.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="165.8" cy="136.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="175.1" cy="139.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="148.0" cy="124.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="146.7" cy="118.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="164.1" cy="136.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="152.6" cy="132.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="168.3" cy="135.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="152.6" cy="127.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="130.9" cy="117.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="136.1" cy="120.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="221.7" cy="124.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="151.1" cy="123.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="142.1" cy="116.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="203.2" cy="120.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="159.9" cy="127.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="154.6" cy="126.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="189.4" cy="123.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="242.6" cy="94.4" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="141.7" cy="122.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="239.1" cy="119.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="118.8" cy="116.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="155.3" cy="133.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="179.3" cy="130.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="153.5" cy="135.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="119.8" cy="100.0" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="167.5" cy="133.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="186.4" cy="132.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="168.6" cy="131.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="146.9" cy="123.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="141.9" cy="128.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="213.4" cy="120.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="113.8" cy="91.7" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="153.0" cy="129.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="163.1" cy="137.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="212.4" cy="118.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="165.3" cy="133.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="168.5" cy="134.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="161.5" cy="126.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="168.5" cy="134.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="210.5" cy="111.7" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="144.2" cy="127.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="177.3" cy="137.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="174.3" cy="137.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="166.0" cy="135.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="144.5" cy="127.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="209.6" cy="127.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="172.9" cy="135.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="195.1" cy="130.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="153.7" cy="129.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="169.4" cy="133.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="200.2" cy="126.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="136.1" cy="114.3" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="196.8" cy="124.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="156.3" cy="126.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="186.6" cy="129.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="161.4" cy="137.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="190.2" cy="133.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="142.7" cy="124.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="195.2" cy="122.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="175.5" cy="138.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="116.9" cy="107.3" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="171.0" cy="139.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="180.2" cy="133.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="178.7" cy="137.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="182.0" cy="126.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="193.6" cy="131.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="248.9" cy="93.1" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="204.1" cy="127.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="137.8" cy="126.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="169.6" cy="129.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="188.3" cy="131.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="206.3" cy="131.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="167.1" cy="129.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="172.5" cy="130.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="149.7" cy="127.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="148.3" cy="120.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="169.2" cy="130.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="246.3" cy="82.9" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="227.6" cy="101.9" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="131.5" cy="115.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="170.8" cy="134.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="160.4" cy="135.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="143.0" cy="123.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="137.3" cy="121.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="149.8" cy="129.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="136.5" cy="112.6" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="156.0" cy="133.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="119.2" cy="105.1" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="171.6" cy="137.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="206.8" cy="129.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="172.6" cy="134.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="245.4" cy="75.1" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="220.5" cy="113.1" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="171.5" cy="131.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="246.8" cy="112.2" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="194.5" cy="131.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="164.1" cy="133.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="165.6" cy="132.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="154.8" cy="128.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="193.4" cy="128.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="171.4" cy="139.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="178.4" cy="131.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="118.2" cy="108.4" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="218.4" cy="101.0" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="237.8" cy="106.1" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="205.3" cy="121.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="95.4" cy="81.8" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="161.5" cy="127.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="159.9" cy="132.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="163.0" cy="138.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="156.1" cy="128.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="170.0" cy="136.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="142.8" cy="121.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="155.8" cy="123.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="170.6" cy="129.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="148.5" cy="124.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="156.2" cy="129.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="193.5" cy="127.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="173.5" cy="128.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="151.4" cy="121.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="184.4" cy="133.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="175.9" cy="138.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="160.5" cy="131.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="169.7" cy="132.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="146.4" cy="131.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="200.2" cy="120.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="188.0" cy="128.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="180.6" cy="136.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="150.1" cy="127.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="184.8" cy="126.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="153.8" cy="123.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="210.4" cy="124.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="228.8" cy="127.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="211.9" cy="119.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="161.9" cy="136.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="147.2" cy="127.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="197.7" cy="123.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="186.9" cy="136.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="139.4" cy="129.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="214.8" cy="114.1" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="241.9" cy="83.3" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="134.3" cy="117.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="159.1" cy="125.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="203.7" cy="129.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="152.0" cy="131.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="196.7" cy="129.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="185.1" cy="130.5" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="133.2" cy="122.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="192.9" cy="132.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="154.6" cy="129.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="220.3" cy="113.5" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="162.9" cy="129.2" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="184.9" cy="127.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="179.9" cy="132.3" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="207.1" cy="124.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="216.4" cy="120.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="116.8" cy="114.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="165.3" cy="130.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="131.6" cy="112.6" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="174.6" cy="135.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="195.8" cy="122.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="129.1" cy="106.3" r="2.1" fill="#0f172a" fill-opacity="0.85"/><circle cx="219.0" cy="113.3" r="2.1" fill="#dc2626" fill-opacity="0.85"/><circle cx="160.5" cy="132.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="156.5" cy="124.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="182.0" cy="137.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="182.9" cy="127.7" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="206.6" cy="131.4" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="209.2" cy="121.6" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="204.8" cy="130.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="109.9" cy="125.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="136.2" cy="129.8" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="177.9" cy="136.9" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="225.8" cy="123.0" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="199.3" cy="128.1" r="1.6" fill="#cbd5e1" fill-opacity="0.85"/><circle cx="222.6" cy="106.4" r="2.1" fill="#dc2626" fill-opacity="0.85"/><text x="296.0" y="22.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#dc2626" font-weight="700" >↑ surexprimés</text><text x="52.0" y="22.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="700" >↓ sous-exprimés</text></svg></div>
+                    <div class="p-6">
+                        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">oncologie translationnelle</p>
+                        <h3 class="text-base font-bold mb-2">Découverte de biomarqueurs</h3>
+                        <p class="text-sm text-slate-700">Découverte et validation de biomarqueurs transcriptomiques pour des programmes d'oncologie en phase clinique : contrôle qualité RNA-seq et effets de lot, expression différentielle, enrichissement de voies, signatures géniques par ML et représentations issues de modèles de fondation omiques.</p>
+                    </div>
+                </article>
+                <article class="section-card">
+                    <div class="border-b-2 border-slate-900"><svg viewBox="0 0 320 176" role="img" aria-label="Tuile d'immunohistochimie avec noyaux segmentés et indice Ki-67" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto block"><rect x="0" y="0" width="320" height="176" fill="#f1f5f9"/><rect x="14" y="12" width="156" height="156" fill="white" stroke="#0f172a" stroke-width="1.3"/><line x1="66.0" y1="12" x2="66.0" y2="168" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><line x1="14" y1="64.0" x2="170" y2="64.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><line x1="118.0" y1="12" x2="118.0" y2="168" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><line x1="14" y1="116.0" x2="170" y2="116.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><ellipse cx="98.3" cy="71.5" rx="4.7" ry="3.7" transform="rotate(67 98.3 71.5)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="109.7" cy="28.8" rx="5.6" ry="4.4" transform="rotate(134 109.7 28.8)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="140.4" cy="55.5" rx="4.2" ry="3.3" transform="rotate(124 140.4 55.5)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="162.6" cy="85.8" rx="4.7" ry="3.7" transform="rotate(145 162.6 85.8)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="88.7" cy="109.4" rx="6.1" ry="4.8" transform="rotate(98 88.7 109.4)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="111.3" cy="142.6" rx="4.5" ry="3.5" transform="rotate(70 111.3 142.6)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="126.1" cy="114.2" rx="5.4" ry="4.2" transform="rotate(31 126.1 114.2)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="25.3" cy="142.0" rx="4.9" ry="3.8" transform="rotate(38 25.3 142.0)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="151.1" cy="75.3" rx="5.8" ry="4.6" transform="rotate(91 151.1 75.3)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="84.3" cy="150.9" rx="6.0" ry="4.7" transform="rotate(153 84.3 150.9)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="35.8" cy="39.2" rx="6.2" ry="4.9" transform="rotate(67 35.8 39.2)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="64.0" cy="91.0" rx="5.6" ry="4.4" transform="rotate(100 64.0 91.0)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="70.9" cy="102.1" rx="5.1" ry="4.0" transform="rotate(166 70.9 102.1)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="149.0" cy="115.6" rx="5.5" ry="4.3" transform="rotate(29 149.0 115.6)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="141.7" cy="158.4" rx="6.3" ry="4.9" transform="rotate(133 141.7 158.4)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="44.7" cy="140.7" rx="5.7" ry="4.5" transform="rotate(133 44.7 140.7)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="148.3" cy="99.6" rx="6.4" ry="5.0" transform="rotate(98 148.3 99.6)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="61.7" cy="28.5" rx="5.5" ry="4.3" transform="rotate(109 61.7 28.5)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="160.4" cy="32.5" rx="6.2" ry="4.8" transform="rotate(25 160.4 32.5)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="79.5" cy="41.1" rx="6.0" ry="4.7" transform="rotate(159 79.5 41.1)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="130.2" cy="143.0" rx="4.9" ry="3.8" transform="rotate(1 130.2 143.0)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="68.3" cy="143.4" rx="5.9" ry="4.6" transform="rotate(141 68.3 143.4)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="31.9" cy="104.2" rx="4.9" ry="3.8" transform="rotate(82 31.9 104.2)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="48.6" cy="76.8" rx="4.3" ry="3.3" transform="rotate(110 48.6 76.8)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="43.6" cy="25.6" rx="5.6" ry="4.4" transform="rotate(126 43.6 25.6)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="112.3" cy="103.5" rx="5.4" ry="4.2" transform="rotate(51 112.3 103.5)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="63.7" cy="158.1" rx="4.7" ry="3.7" transform="rotate(31 63.7 158.1)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="98.8" cy="21.0" rx="5.4" ry="4.2" transform="rotate(93 98.8 21.0)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="28.9" cy="115.3" rx="4.3" ry="3.3" transform="rotate(175 28.9 115.3)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="66.6" cy="70.8" rx="5.6" ry="4.3" transform="rotate(144 66.6 70.8)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="74.5" cy="128.7" rx="4.9" ry="3.8" transform="rotate(145 74.5 128.7)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="101.9" cy="123.7" rx="4.3" ry="3.3" transform="rotate(120 101.9 123.7)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="36.1" cy="65.0" rx="5.8" ry="4.5" transform="rotate(40 36.1 65.0)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="139.4" cy="81.3" rx="5.0" ry="3.9" transform="rotate(144 139.4 81.3)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="135.1" cy="68.2" rx="5.7" ry="4.4" transform="rotate(41 135.1 68.2)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="62.2" cy="132.0" rx="4.5" ry="3.5" transform="rotate(17 62.2 132.0)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="21.2" cy="153.3" rx="4.6" ry="3.6" transform="rotate(103 21.2 153.3)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="136.1" cy="25.3" rx="4.9" ry="3.8" transform="rotate(108 136.1 25.3)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="127.2" cy="42.9" rx="4.2" ry="3.3" transform="rotate(4 127.2 42.9)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="96.9" cy="135.2" rx="4.7" ry="3.6" transform="rotate(61 96.9 135.2)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="34.2" cy="90.3" rx="6.2" ry="4.8" transform="rotate(102 34.2 90.3)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="122.5" cy="73.1" rx="5.5" ry="4.3" transform="rotate(137 122.5 73.1)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="109.2" cy="80.4" rx="6.0" ry="4.7" transform="rotate(119 109.2 80.4)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="81.2" cy="79.4" rx="4.4" ry="3.4" transform="rotate(94 81.2 79.4)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="146.4" cy="131.1" rx="5.7" ry="4.5" transform="rotate(56 146.4 131.1)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="46.4" cy="54.4" rx="4.8" ry="3.7" transform="rotate(143 46.4 54.4)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="119.3" cy="126.6" rx="4.6" ry="3.6" transform="rotate(18 119.3 126.6)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="94.4" cy="87.7" rx="5.7" ry="4.5" transform="rotate(105 94.4 87.7)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="147.9" cy="40.7" rx="5.7" ry="4.4" transform="rotate(79 147.9 40.7)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="58.8" cy="47.1" rx="4.6" ry="3.6" transform="rotate(180 58.8 47.1)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="155.7" cy="61.3" rx="5.8" ry="4.5" transform="rotate(66 155.7 61.3)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="42.1" cy="158.8" rx="6.0" ry="4.7" transform="rotate(22 42.1 158.8)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="125.1" cy="155.2" rx="5.1" ry="4.0" transform="rotate(86 125.1 155.2)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="47.5" cy="119.2" rx="4.8" ry="3.7" transform="rotate(166 47.5 119.2)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="104.1" cy="154.9" rx="4.7" ry="3.7" transform="rotate(2 104.1 154.9)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="98.3" cy="36.0" rx="5.1" ry="4.0" transform="rotate(1 98.3 36.0)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="63.4" cy="114.6" rx="5.9" ry="4.6" transform="rotate(156 63.4 114.6)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="92.7" cy="53.7" rx="4.3" ry="3.4" transform="rotate(9 92.7 53.7)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="123.9" cy="19.9" rx="5.6" ry="4.4" transform="rotate(55 123.9 19.9)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="128.4" cy="87.9" rx="5.2" ry="4.1" transform="rotate(54 128.4 87.9)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="26.6" cy="29.6" rx="4.5" ry="3.5" transform="rotate(24 26.6 29.6)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="21.1" cy="48.5" rx="4.7" ry="3.7" transform="rotate(16 21.1 48.5)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="23.6" cy="82.6" rx="4.3" ry="3.4" transform="rotate(8 23.6 82.6)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="77.3" cy="22.9" rx="5.1" ry="4.0" transform="rotate(34 77.3 22.9)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="127.2" cy="57.9" rx="4.3" ry="3.3" transform="rotate(134 127.2 57.9)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="158.7" cy="142.3" rx="6.4" ry="5.0" transform="rotate(138 158.7 142.3)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="79.9" cy="92.6" rx="5.6" ry="4.4" transform="rotate(113 79.9 92.6)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="76.7" cy="59.0" rx="4.9" ry="3.8" transform="rotate(121 76.7 59.0)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="50.1" cy="103.2" rx="6.1" ry="4.8" transform="rotate(173 50.1 103.2)" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><ellipse cx="115.9" cy="57.1" rx="4.6" ry="3.6" transform="rotate(12 115.9 57.1)" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><text x="190.0" y="30.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="700" >tuile IHC 512×512</text><text x="190.0" y="46.0" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#64748b" font-weight="400" >normaliser → segmenter</text><text x="190.0" y="57.0" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#64748b" font-weight="400" >→ scorer</text><ellipse cx="194" cy="77" rx="4" ry="3.2" fill="#dc2626" fill-opacity="0.75" stroke="#0f172a" stroke-width="0.8"/><text x="203.0" y="80.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >Ki-67 positif</text><ellipse cx="194" cy="89" rx="4" ry="3.2" fill="#cbd5e1" fill-opacity="0.6" stroke="#0f172a" stroke-width="0.8"/><text x="203.0" y="92.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >négatif</text><text x="190.0" y="112.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="700" >indice Ki-67</text><rect x="190" y="118" width="110" height="9" fill="white" stroke="#0f172a" stroke-width="0.8"/><rect x="190" y="118" width="39.3" height="9" fill="#dc2626"/></svg></div>
+                    <div class="p-6">
+                        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">pathologie numérique</p>
+                        <h3 class="text-base font-bold mb-2">Analyse d'images IHC</h3>
+                        <p class="text-sm text-slate-700">Pipeline pour les lames entières d'immunohistochimie : découpage en tuiles et normalisation de la coloration, segmentation des noyaux par CNN et score Ki-67, comparé à une méthode classique de déconvolution des couleurs.</p>
+                    </div>
+                </article>
+                <article class="section-card">
+                    <div class="border-b-2 border-slate-900"><svg viewBox="0 0 320 176" role="img" aria-label="Profils pharmacocinétiques concentration-temps observés et synthétiques" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto block"><rect x="0" y="0" width="320" height="176" fill="#f1f5f9"/><line x1="46" y1="140" x2="300" y2="140" stroke="#0f172a" stroke-width="1.2"/><line x1="46" y1="14" x2="46" y2="140" stroke="#0f172a" stroke-width="1.2"/><line x1="46.0" y1="140" x2="46.0" y2="143" stroke="#0f172a"/><text x="46.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >0</text><line x1="109.5" y1="140" x2="109.5" y2="143" stroke="#0f172a"/><text x="109.5" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >7</text><line x1="173.0" y1="140" x2="173.0" y2="143" stroke="#0f172a"/><text x="173.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >14</text><line x1="236.5" y1="140" x2="236.5" y2="143" stroke="#0f172a"/><text x="236.5" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >21</text><line x1="300.0" y1="140" x2="300.0" y2="143" stroke="#0f172a"/><text x="300.0" y="152.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#64748b" font-weight="400" >28</text><line x1="43" y1="140.0" x2="46" y2="140.0" stroke="#0f172a"/><line x1="46" y1="140.0" x2="300" y2="140.0" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="143.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >0</text><line x1="43" y1="100.6" x2="46" y2="100.6" stroke="#0f172a"/><line x1="46" y1="100.6" x2="300" y2="100.6" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="103.6" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >1</text><line x1="43" y1="61.2" x2="46" y2="61.2" stroke="#0f172a"/><line x1="46" y1="61.2" x2="300" y2="61.2" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="64.2" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >2</text><line x1="43" y1="21.9" x2="46" y2="21.9" stroke="#0f172a"/><line x1="46" y1="21.9" x2="300" y2="21.9" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="2 2"/><text x="41.0" y="24.9" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="end" fill="#64748b" font-weight="400" >3</text><text x="173.0" y="164.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >temps (jours)</text><text x="11.0" y="77.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" transform="rotate(-90 11 77.0)">conc. (ng/mL)</text><polyline points="46.0,134.4 48.3,98.3 50.5,130.9 52.8,133.7 55.1,133.7 57.3,133.5 59.6,133.3 61.9,133.0 64.1,132.8 66.4,132.4 68.7,132.1 70.9,131.7 73.2,131.3 75.5,130.8 77.8,130.3 80.0,129.8 82.3,129.2 84.6,128.5 86.8,127.8 89.1,127.0 91.4,126.2 93.6,125.4 95.9,124.4 98.2,123.4 100.4,122.3 102.7,121.2 105.0,120.0 107.2,118.7 109.5,117.4 111.8,116.0 114.0,114.5 116.3,113.0 118.6,111.4 120.8,109.8 123.1,108.1 125.4,106.3 127.6,104.5 129.9,102.6 132.2,100.7 134.4,98.8 136.7,96.9 139.0,94.9 141.2,92.9 143.5,91.0 145.8,89.0 148.1,87.0 150.3,85.1 152.6,83.2 154.9,81.4 157.1,79.6 159.4,77.8 161.7,76.1 163.9,74.6 166.2,73.1 168.5,71.7 170.7,70.4 173.0,69.2 175.3,68.2 177.5,67.2 179.8,66.4 182.1,65.8 184.3,65.3 186.6,64.9 188.9,64.7 191.1,64.7 193.4,64.7 195.7,65.0 197.9,65.4 200.2,65.9 202.5,66.6 204.8,67.4 207.0,68.4 209.3,69.4 211.6,70.6 213.8,71.9 216.1,73.3 218.4,74.9 220.6,76.5 222.9,78.1 225.2,79.9 227.4,81.7 229.7,83.6 232.0,85.5 234.2,87.4 236.5,89.4 238.8,91.3 241.0,93.3 243.3,95.3 245.6,97.3 247.8,99.2 250.1,101.1 252.4,103.0 254.6,104.8 256.9,106.6 259.2,108.4 261.4,110.1 263.7,111.7 266.0,113.3 268.2,114.8 270.5,116.3 272.8,117.7 275.1,119.0 277.3,120.2 279.6,121.4 281.9,122.6 284.1,123.6 286.4,124.6 288.7,125.5 290.9,126.4 293.2,127.2 295.5,127.9 297.7,128.6 300.0,129.3" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,132.6 48.3,94.1 50.5,128.4 52.8,131.0 55.1,130.7 57.3,130.1 59.6,129.4 61.9,128.7 64.1,127.9 66.4,127.0 68.7,126.0 70.9,124.9 73.2,123.8 75.5,122.6 77.8,121.2 80.0,119.8 82.3,118.3 84.6,116.7 86.8,115.0 89.1,113.2 91.4,111.3 93.6,109.3 95.9,107.2 98.2,105.1 100.4,102.8 102.7,100.5 105.0,98.2 107.2,95.8 109.5,93.4 111.8,90.9 114.0,88.5 116.3,86.0 118.6,83.6 120.8,81.2 123.1,78.8 125.4,76.5 127.6,74.3 129.9,72.2 132.2,70.2 134.4,68.3 136.7,66.5 139.0,64.9 141.2,63.5 143.5,62.3 145.8,61.2 148.1,60.3 150.3,59.7 152.6,59.2 154.9,59.0 157.1,59.0 159.4,59.2 161.7,59.6 163.9,60.2 166.2,61.1 168.5,62.1 170.7,63.3 173.0,64.7 175.3,66.3 177.5,68.0 179.8,69.8 182.1,71.8 184.3,73.9 186.6,76.1 188.9,78.4 191.1,80.8 193.4,83.2 195.7,85.6 197.9,88.1 200.2,90.5 202.5,93.0 204.8,95.4 207.0,97.8 209.3,100.2 211.6,102.5 213.8,104.7 216.1,106.9 218.4,109.0 220.6,111.0 222.9,112.9 225.2,114.7 227.4,116.4 229.7,118.0 232.0,119.6 234.2,121.0 236.5,122.4 238.8,123.6 241.0,124.8 243.3,125.8 245.6,126.8 247.8,127.7 250.1,128.5 252.4,129.3 254.6,130.0 256.9,130.6 259.2,131.2 261.4,131.7 263.7,132.1 266.0,132.5 268.2,132.9 270.5,133.2 272.8,133.5 275.1,133.7 277.3,133.9 279.6,134.1 281.9,134.3 284.1,134.4 286.4,134.6 288.7,134.7 290.9,134.8 293.2,134.8 295.5,134.9 297.7,135.0 300.0,135.0" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,135.2 48.3,93.6 50.5,131.6 52.8,135.0 55.1,135.2 57.3,135.2 59.6,135.2 61.9,135.1 64.1,135.1 66.4,135.1 68.7,135.0 70.9,135.0 73.2,134.9 75.5,134.8 77.8,134.8 80.0,134.6 82.3,134.5 84.6,134.4 86.8,134.2 89.1,134.0 91.4,133.8 93.6,133.5 95.9,133.2 98.2,132.8 100.4,132.4 102.7,132.0 105.0,131.5 107.2,130.9 109.5,130.2 111.8,129.5 114.0,128.7 116.3,127.8 118.6,126.8 120.8,125.7 123.1,124.6 125.4,123.3 127.6,121.9 129.9,120.4 132.2,118.8 134.4,117.0 136.7,115.2 139.0,113.3 141.2,111.3 143.5,109.2 145.8,107.0 148.1,104.7 150.3,102.3 152.6,99.9 154.9,97.5 157.1,95.1 159.4,92.6 161.7,90.1 163.9,87.7 166.2,85.4 168.5,83.1 170.7,80.9 173.0,78.8 175.3,76.8 177.5,75.0 179.8,73.3 182.1,71.8 184.3,70.6 186.6,69.5 188.9,68.7 191.1,68.1 193.4,67.7 195.7,67.6 197.9,67.7 200.2,68.1 202.5,68.7 204.8,69.5 207.0,70.5 209.3,71.8 211.6,73.3 213.8,74.9 216.1,76.7 218.4,78.7 220.6,80.8 222.9,83.0 225.2,85.3 227.4,87.6 229.7,90.1 232.0,92.5 234.2,95.0 236.5,97.4 238.8,99.9 241.0,102.2 243.3,104.6 245.6,106.9 247.8,109.1 250.1,111.2 252.4,113.2 254.6,115.2 256.9,117.0 259.2,118.7 261.4,120.3 263.7,121.8 266.0,123.2 268.2,124.5 270.5,125.7 272.8,126.8 275.1,127.8 277.3,128.7 279.6,129.5 281.9,130.2 284.1,130.9 286.4,131.4 288.7,132.0 290.9,132.4 293.2,132.8 295.5,133.2 297.7,133.5 300.0,133.8" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,134.7 48.3,101.4 50.5,131.6 52.8,134.2 55.1,134.2 57.3,134.1 59.6,133.9 61.9,133.7 64.1,133.5 66.4,133.2 68.7,132.9 70.9,132.6 73.2,132.3 75.5,131.9 77.8,131.4 80.0,131.0 82.3,130.4 84.6,129.9 86.8,129.2 89.1,128.6 91.4,127.8 93.6,127.0 95.9,126.2 98.2,125.2 100.4,124.3 102.7,123.2 105.0,122.1 107.2,120.9 109.5,119.7 111.8,118.4 114.0,117.0 116.3,115.6 118.6,114.1 120.8,112.6 123.1,111.0 125.4,109.4 127.6,107.7 129.9,106.1 132.2,104.4 134.4,102.6 136.7,100.9 139.0,99.2 141.2,97.5 143.5,95.9 145.8,94.2 148.1,92.6 150.3,91.1 152.6,89.6 154.9,88.2 157.1,86.9 159.4,85.7 161.7,84.6 163.9,83.6 166.2,82.7 168.5,82.0 170.7,81.3 173.0,80.9 175.3,80.5 177.5,80.3 179.8,80.3 182.1,80.3 184.3,80.6 186.6,81.0 188.9,81.5 191.1,82.1 193.4,82.9 195.7,83.8 197.9,84.9 200.2,86.0 202.5,87.2 204.8,88.6 207.0,90.0 209.3,91.5 211.6,93.0 213.8,94.6 216.1,96.3 218.4,97.9 220.6,99.6 222.9,101.4 225.2,103.1 227.4,104.8 229.7,106.5 232.0,108.2 234.2,109.8 236.5,111.4 238.8,113.0 241.0,114.5 243.3,115.9 245.6,117.4 247.8,118.7 250.1,120.0 252.4,121.2 254.6,122.4 256.9,123.5 259.2,124.5 261.4,125.5 263.7,126.4 266.0,127.2 268.2,128.0 270.5,128.7 272.8,129.4 275.1,130.0 277.3,130.6 279.6,131.1 281.9,131.6 284.1,132.0 286.4,132.4 288.7,132.7 290.9,133.0 293.2,133.3 295.5,133.5 297.7,133.8 300.0,134.0" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,132.9 48.3,107.3 50.5,130.0 52.8,131.7 55.1,131.5 57.3,131.1 59.6,130.6 61.9,130.1 64.1,129.6 66.4,129.0 68.7,128.4 70.9,127.7 73.2,127.0 75.5,126.2 77.8,125.4 80.0,124.5 82.3,123.5 84.6,122.6 86.8,121.5 89.1,120.5 91.4,119.3 93.6,118.1 95.9,116.9 98.2,115.6 100.4,114.3 102.7,112.9 105.0,111.5 107.2,110.1 109.5,108.6 111.8,107.2 114.0,105.7 116.3,104.1 118.6,102.6 120.8,101.1 123.1,99.6 125.4,98.1 127.6,96.6 129.9,95.1 132.2,93.7 134.4,92.3 136.7,91.0 139.0,89.7 141.2,88.5 143.5,87.4 145.8,86.3 148.1,85.3 150.3,84.5 152.6,83.7 154.9,83.0 157.1,82.4 159.4,81.9 161.7,81.6 163.9,81.3 166.2,81.2 168.5,81.2 170.7,81.3 173.0,81.5 175.3,81.9 177.5,82.3 179.8,82.9 182.1,83.5 184.3,84.3 186.6,85.2 188.9,86.1 191.1,87.2 193.4,88.3 195.7,89.5 197.9,90.8 200.2,92.1 202.5,93.5 204.8,94.9 207.0,96.3 209.3,97.8 211.6,99.3 213.8,100.8 216.1,102.3 218.4,103.9 220.6,105.4 222.9,106.9 225.2,108.4 227.4,109.8 229.7,111.3 232.0,112.7 234.2,114.1 236.5,115.4 238.8,116.7 241.0,117.9 243.3,119.1 245.6,120.3 247.8,121.3 250.1,122.4 252.4,123.4 254.6,124.3 256.9,125.2 259.2,126.0 261.4,126.8 263.7,127.5 266.0,128.2 268.2,128.9 270.5,129.5 272.8,130.0 275.1,130.5 277.3,131.0 279.6,131.4 281.9,131.8 284.1,132.2 286.4,132.5 288.7,132.8 290.9,133.1 293.2,133.3 295.5,133.5 297.7,133.7 300.0,133.9" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,135.2 48.3,96.7 50.5,131.8 52.8,135.0 55.1,135.2 57.3,135.2 59.6,135.1 61.9,135.1 64.1,135.1 66.4,135.0 68.7,135.0 70.9,134.9 73.2,134.8 75.5,134.7 77.8,134.6 80.0,134.5 82.3,134.4 84.6,134.2 86.8,134.0 89.1,133.8 91.4,133.5 93.6,133.3 95.9,132.9 98.2,132.6 100.4,132.1 102.7,131.7 105.0,131.2 107.2,130.6 109.5,129.9 111.8,129.2 114.0,128.4 116.3,127.6 118.6,126.6 120.8,125.6 123.1,124.5 125.4,123.4 127.6,122.1 129.9,120.8 132.2,119.3 134.4,117.8 136.7,116.3 139.0,114.6 141.2,112.9 143.5,111.2 145.8,109.4 148.1,107.5 150.3,105.7 152.6,103.8 154.9,101.9 157.1,100.0 159.4,98.2 161.7,96.4 163.9,94.6 166.2,93.0 168.5,91.4 170.7,89.9 173.0,88.5 175.3,87.3 177.5,86.2 179.8,85.2 182.1,84.4 184.3,83.8 186.6,83.3 188.9,83.1 191.1,83.0 193.4,83.1 195.7,83.4 197.9,83.9 200.2,84.5 202.5,85.3 204.8,86.3 207.0,87.4 209.3,88.7 211.6,90.0 213.8,91.5 216.1,93.1 218.4,94.8 220.6,96.6 222.9,98.4 225.2,100.2 227.4,102.1 229.7,104.0 232.0,105.9 234.2,107.7 236.5,109.6 238.8,111.4 241.0,113.1 243.3,114.8 245.6,116.4 247.8,118.0 250.1,119.5 252.4,120.9 254.6,122.2 256.9,123.5 259.2,124.7 261.4,125.7 263.7,126.7 266.0,127.7 268.2,128.5 270.5,129.3 272.8,130.0 275.1,130.6 277.3,131.2 279.6,131.7 281.9,132.2 284.1,132.6 286.4,133.0 288.7,133.3 290.9,133.6 293.2,133.8 295.5,134.0 297.7,134.2 300.0,134.4" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,131.3 48.3,95.0 50.5,127.2 52.8,129.7 55.1,129.3 57.3,128.7 59.6,128.1 61.9,127.4 64.1,126.6 66.4,125.8 68.7,125.0 70.9,124.1 73.2,123.1 75.5,122.1 77.8,121.1 80.0,120.0 82.3,118.9 84.6,117.7 86.8,116.4 89.1,115.2 91.4,113.9 93.6,112.5 95.9,111.1 98.2,109.7 100.4,108.3 102.7,106.8 105.0,105.4 107.2,103.9 109.5,102.5 111.8,101.0 114.0,99.6 116.3,98.1 118.6,96.8 120.8,95.4 123.1,94.1 125.4,92.8 127.6,91.6 129.9,90.5 132.2,89.5 134.4,88.5 136.7,87.6 139.0,86.8 141.2,86.1 143.5,85.5 145.8,85.0 148.1,84.6 150.3,84.3 152.6,84.1 154.9,84.0 157.1,84.1 159.4,84.3 161.7,84.5 163.9,84.9 166.2,85.4 168.5,86.0 170.7,86.7 173.0,87.5 175.3,88.4 177.5,89.4 179.8,90.4 182.1,91.6 184.3,92.8 186.6,94.0 188.9,95.3 191.1,96.7 193.4,98.0 195.7,99.5 197.9,100.9 200.2,102.3 202.5,103.8 204.8,105.3 207.0,106.7 209.3,108.2 211.6,109.6 213.8,111.0 216.1,112.4 218.4,113.8 220.6,115.1 222.9,116.4 225.2,117.6 227.4,118.8 229.7,119.9 232.0,121.0 234.2,122.1 236.5,123.1 238.8,124.0 241.0,124.9 243.3,125.8 245.6,126.6 247.8,127.3 250.1,128.0 252.4,128.7 254.6,129.3 256.9,129.8 259.2,130.4 261.4,130.8 263.7,131.3 266.0,131.7 268.2,132.1 270.5,132.4 272.8,132.7 275.1,133.0 277.3,133.3 279.6,133.5 281.9,133.7 284.1,133.9 286.4,134.0 288.7,134.2 290.9,134.3 293.2,134.4 295.5,134.6 297.7,134.6 300.0,134.7" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,134.9 48.3,106.2 50.5,132.3 52.8,134.6 55.1,134.7 57.3,134.6 59.6,134.5 61.9,134.4 64.1,134.2 66.4,134.1 68.7,133.9 70.9,133.7 73.2,133.5 75.5,133.3 77.8,133.1 80.0,132.8 82.3,132.5 84.6,132.1 86.8,131.8 89.1,131.4 91.4,130.9 93.6,130.4 95.9,129.9 98.2,129.4 100.4,128.7 102.7,128.1 105.0,127.4 107.2,126.6 109.5,125.8 111.8,125.0 114.0,124.1 116.3,123.1 118.6,122.1 120.8,121.0 123.1,119.9 125.4,118.7 127.6,117.5 129.9,116.2 132.2,114.9 134.4,113.5 136.7,112.1 139.0,110.7 141.2,109.2 143.5,107.7 145.8,106.2 148.1,104.7 150.3,103.1 152.6,101.6 154.9,100.1 157.1,98.5 159.4,97.0 161.7,95.5 163.9,94.1 166.2,92.7 168.5,91.3 170.7,90.0 173.0,88.8 175.3,87.6 177.5,86.5 179.8,85.5 182.1,84.6 184.3,83.8 186.6,83.1 188.9,82.5 191.1,82.0 193.4,81.7 195.7,81.4 197.9,81.3 200.2,81.2 202.5,81.3 204.8,81.6 207.0,81.9 209.3,82.4 211.6,82.9 213.8,83.6 216.1,84.4 218.4,85.3 220.6,86.2 222.9,87.3 225.2,88.4 227.4,89.6 229.7,90.9 232.0,92.3 234.2,93.7 236.5,95.1 238.8,96.6 241.0,98.1 243.3,99.6 245.6,101.1 247.8,102.7 250.1,104.2 252.4,105.8 254.6,107.3 256.9,108.8 259.2,110.3 261.4,111.7 263.7,113.1 266.0,114.5 268.2,115.8 270.5,117.1 272.8,118.3 275.1,119.5 277.3,120.7 279.6,121.8 281.9,122.8 284.1,123.8 286.4,124.7 288.7,125.6 290.9,126.4 293.2,127.2 295.5,127.9 297.7,128.6 300.0,129.2" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,134.2 48.3,104.0 50.5,131.2 52.8,133.5 55.1,133.4 57.3,133.1 59.6,132.8 61.9,132.5 64.1,132.1 66.4,131.7 68.7,131.2 70.9,130.7 73.2,130.2 75.5,129.5 77.8,128.8 80.0,128.1 82.3,127.3 84.6,126.4 86.8,125.4 89.1,124.4 91.4,123.3 93.6,122.1 95.9,120.8 98.2,119.5 100.4,118.0 102.7,116.5 105.0,114.9 107.2,113.2 109.5,111.4 111.8,109.5 114.0,107.6 116.3,105.5 118.6,103.5 120.8,101.3 123.1,99.1 125.4,96.9 127.6,94.6 129.9,92.3 132.2,89.9 134.4,87.6 136.7,85.2 139.0,82.9 141.2,80.6 143.5,78.4 145.8,76.2 148.1,74.0 150.3,72.0 152.6,70.0 154.9,68.2 157.1,66.4 159.4,64.8 161.7,63.4 163.9,62.0 166.2,60.9 168.5,59.9 170.7,59.1 173.0,58.5 175.3,58.0 177.5,57.8 179.8,57.7 182.1,57.9 184.3,58.2 186.6,58.7 188.9,59.4 191.1,60.3 193.4,61.4 195.7,62.6 197.9,64.0 200.2,65.5 202.5,67.2 204.8,69.0 207.0,70.9 209.3,72.9 211.6,74.9 213.8,77.1 216.1,79.3 218.4,81.6 220.6,83.9 222.9,86.3 225.2,88.6 227.4,90.9 229.7,93.3 232.0,95.6 234.2,97.8 236.5,100.1 238.8,102.2 241.0,104.4 243.3,106.4 245.6,108.4 247.8,110.3 250.1,112.2 252.4,113.9 254.6,115.6 256.9,117.2 259.2,118.6 261.4,120.1 263.7,121.4 266.0,122.6 268.2,123.8 270.5,124.9 272.8,125.9 275.1,126.8 277.3,127.6 279.6,128.4 281.9,129.2 284.1,129.8 286.4,130.4 288.7,131.0 290.9,131.4 293.2,131.9 295.5,132.3 297.7,132.6 300.0,133.0" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,133.9 48.3,105.1 50.5,131.0 52.8,133.1 55.1,133.0 57.3,132.7 59.6,132.4 61.9,132.0 64.1,131.6 66.4,131.2 68.7,130.7 70.9,130.2 73.2,129.6 75.5,129.0 77.8,128.3 80.0,127.6 82.3,126.8 84.6,126.0 86.8,125.1 89.1,124.1 91.4,123.1 93.6,121.9 95.9,120.8 98.2,119.5 100.4,118.2 102.7,116.8 105.0,115.3 107.2,113.8 109.5,112.2 111.8,110.5 114.0,108.8 116.3,107.0 118.6,105.1 120.8,103.2 123.1,101.2 125.4,99.2 127.6,97.1 129.9,95.0 132.2,92.9 134.4,90.8 136.7,88.7 139.0,86.5 141.2,84.4 143.5,82.3 145.8,80.2 148.1,78.2 150.3,76.2 152.6,74.2 154.9,72.4 157.1,70.6 159.4,68.9 161.7,67.3 163.9,65.8 166.2,64.4 168.5,63.2 170.7,62.0 173.0,61.1 175.3,60.2 177.5,59.6 179.8,59.0 182.1,58.6 184.3,58.4 186.6,58.4 188.9,58.5 191.1,58.8 193.4,59.2 195.7,59.8 197.9,60.5 200.2,61.4 202.5,62.5 204.8,63.6 207.0,64.9 209.3,66.3 211.6,67.9 213.8,69.5 216.1,71.2 218.4,73.1 220.6,75.0 222.9,76.9 225.2,78.9 227.4,81.0 229.7,83.1 232.0,85.2 234.2,87.3 236.5,89.5 238.8,91.6 241.0,93.7 243.3,95.8 245.6,97.9 247.8,99.9 250.1,101.9 252.4,103.9 254.6,105.8 256.9,107.6 259.2,109.4 261.4,111.1 263.7,112.8 266.0,114.4 268.2,115.9 270.5,117.3 272.8,118.7 275.1,120.0 277.3,121.2 279.6,122.4 281.9,123.5 284.1,124.5 286.4,125.4 288.7,126.3 290.9,127.1 293.2,127.9 295.5,128.6 297.7,129.2 300.0,129.8" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,135.0 48.3,94.2 50.5,131.3 52.8,134.5 55.1,134.7 57.3,134.6 59.6,134.4 61.9,134.3 64.1,134.1 66.4,133.9 68.7,133.6 70.9,133.4 73.2,133.0 75.5,132.7 77.8,132.3 80.0,131.8 82.3,131.3 84.6,130.8 86.8,130.1 89.1,129.4 91.4,128.7 93.6,127.8 95.9,126.9 98.2,125.9 100.4,124.8 102.7,123.6 105.0,122.4 107.2,121.0 109.5,119.6 111.8,118.0 114.0,116.4 116.3,114.8 118.6,113.0 120.8,111.2 123.1,109.3 125.4,107.4 127.6,105.4 129.9,103.4 132.2,101.4 134.4,99.3 136.7,97.3 139.0,95.4 141.2,93.4 143.5,91.5 145.8,89.7 148.1,88.0 150.3,86.4 152.6,84.9 154.9,83.5 157.1,82.3 159.4,81.2 161.7,80.3 163.9,79.6 166.2,79.1 168.5,78.8 170.7,78.6 173.0,78.7 175.3,78.9 177.5,79.4 179.8,80.0 182.1,80.8 184.3,81.8 186.6,82.9 188.9,84.2 191.1,85.7 193.4,87.3 195.7,88.9 197.9,90.7 200.2,92.6 202.5,94.5 204.8,96.4 207.0,98.4 209.3,100.5 211.6,102.5 213.8,104.5 216.1,106.5 218.4,108.4 220.6,110.3 222.9,112.2 225.2,114.0 227.4,115.7 229.7,117.3 232.0,118.9 234.2,120.4 236.5,121.8 238.8,123.1 241.0,124.3 243.3,125.4 245.6,126.5 247.8,127.4 250.1,128.3 252.4,129.1 254.6,129.8 256.9,130.5 259.2,131.1 261.4,131.6 263.7,132.1 266.0,132.5 268.2,132.9 270.5,133.2 272.8,133.5 275.1,133.8 277.3,134.0 279.6,134.2 281.9,134.4 284.1,134.5 286.4,134.6 288.7,134.7 290.9,134.8 293.2,134.9 295.5,135.0 297.7,135.0 300.0,135.1" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,134.2 48.3,106.4 50.5,131.4 52.8,133.4 55.1,133.4 57.3,133.1 59.6,132.8 61.9,132.5 64.1,132.1 66.4,131.7 68.7,131.3 70.9,130.8 73.2,130.3 75.5,129.7 77.8,129.1 80.0,128.5 82.3,127.7 84.6,127.0 86.8,126.1 89.1,125.3 91.4,124.3 93.6,123.3 95.9,122.3 98.2,121.2 100.4,120.0 102.7,118.8 105.0,117.5 107.2,116.2 109.5,114.8 111.8,113.4 114.0,112.0 116.3,110.5 118.6,109.0 120.8,107.5 123.1,106.0 125.4,104.5 127.6,103.0 129.9,101.4 132.2,100.0 134.4,98.5 136.7,97.1 139.0,95.7 141.2,94.4 143.5,93.2 145.8,92.0 148.1,90.9 150.3,89.9 152.6,89.0 154.9,88.2 157.1,87.6 159.4,87.0 161.7,86.6 163.9,86.2 166.2,86.0 168.5,86.0 170.7,86.0 173.0,86.2 175.3,86.5 177.5,87.0 179.8,87.5 182.1,88.2 184.3,89.0 186.6,89.9 188.9,90.9 191.1,91.9 193.4,93.1 195.7,94.3 197.9,95.7 200.2,97.0 202.5,98.4 204.8,99.9 207.0,101.4 209.3,102.9 211.6,104.4 213.8,105.9 216.1,107.4 218.4,108.9 220.6,110.4 222.9,111.9 225.2,113.3 227.4,114.8 229.7,116.1 232.0,117.4 234.2,118.7 236.5,119.9 238.8,121.1 241.0,122.2 243.3,123.3 245.6,124.3 247.8,125.2 250.1,126.1 252.4,126.9 254.6,127.7 256.9,128.4 259.2,129.1 261.4,129.7 263.7,130.3 266.0,130.8 268.2,131.3 270.5,131.7 272.8,132.1 275.1,132.5 277.3,132.8 279.6,133.1 281.9,133.4 284.1,133.6 286.4,133.8 288.7,134.0 290.9,134.2 293.2,134.3 295.5,134.4 297.7,134.5 300.0,134.6" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,134.7 48.3,109.5 50.5,132.2 52.8,134.1 55.1,134.1 57.3,133.9 59.6,133.6 61.9,133.4 64.1,133.0 66.4,132.7 68.7,132.3 70.9,131.9 73.2,131.4 75.5,130.8 77.8,130.2 80.0,129.5 82.3,128.8 84.6,127.9 86.8,127.0 89.1,126.0 91.4,124.9 93.6,123.8 95.9,122.5 98.2,121.2 100.4,119.7 102.7,118.2 105.0,116.5 107.2,114.8 109.5,112.9 111.8,111.0 114.0,109.0 116.3,107.0 118.6,104.8 120.8,102.6 123.1,100.4 125.4,98.1 127.6,95.8 129.9,93.4 132.2,91.1 134.4,88.8 136.7,86.5 139.0,84.3 141.2,82.1 143.5,80.0 145.8,78.1 148.1,76.2 150.3,74.4 152.6,72.8 154.9,71.4 157.1,70.1 159.4,69.1 161.7,68.2 163.9,67.5 166.2,67.0 168.5,66.7 170.7,66.7 173.0,66.8 175.3,67.2 177.5,67.8 179.8,68.6 182.1,69.6 184.3,70.7 186.6,72.1 188.9,73.6 191.1,75.3 193.4,77.1 195.7,79.0 197.9,81.0 200.2,83.2 202.5,85.4 204.8,87.6 207.0,89.9 209.3,92.2 211.6,94.6 213.8,96.9 216.1,99.2 218.4,101.5 220.6,103.7 222.9,105.9 225.2,108.0 227.4,110.0 229.7,112.0 232.0,113.8 234.2,115.6 236.5,117.3 238.8,118.9 241.0,120.4 243.3,121.8 245.6,123.1 247.8,124.4 250.1,125.5 252.4,126.5 254.6,127.5 256.9,128.3 259.2,129.1 261.4,129.9 263.7,130.5 266.0,131.1 268.2,131.6 270.5,132.1 272.8,132.5 275.1,132.9 277.3,133.2 279.6,133.5 281.9,133.7 284.1,134.0 286.4,134.2 288.7,134.3 290.9,134.5 293.2,134.6 295.5,134.7 297.7,134.8 300.0,134.9" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,134.3 48.3,94.7 50.5,130.5 52.8,133.5 55.1,133.5 57.3,133.2 59.6,132.9 61.9,132.6 64.1,132.2 66.4,131.8 68.7,131.3 70.9,130.8 73.2,130.2 75.5,129.6 77.8,128.9 80.0,128.1 82.3,127.3 84.6,126.4 86.8,125.4 89.1,124.4 91.4,123.3 93.6,122.1 95.9,120.8 98.2,119.5 100.4,118.1 102.7,116.6 105.0,115.0 107.2,113.3 109.5,111.6 111.8,109.9 114.0,108.0 116.3,106.2 118.6,104.2 120.8,102.3 123.1,100.3 125.4,98.3 127.6,96.3 129.9,94.3 132.2,92.3 134.4,90.4 136.7,88.5 139.0,86.6 141.2,84.8 143.5,83.1 145.8,81.5 148.1,80.0 150.3,78.6 152.6,77.4 154.9,76.3 157.1,75.3 159.4,74.5 161.7,73.8 163.9,73.3 166.2,73.0 168.5,72.9 170.7,72.9 173.0,73.1 175.3,73.5 177.5,74.1 179.8,74.8 182.1,75.6 184.3,76.7 186.6,77.8 188.9,79.1 191.1,80.6 193.4,82.1 195.7,83.7 197.9,85.5 200.2,87.3 202.5,89.2 204.8,91.1 207.0,93.0 209.3,95.0 211.6,97.0 213.8,99.0 216.1,101.0 218.4,103.0 220.6,104.9 222.9,106.9 225.2,108.7 227.4,110.5 229.7,112.3 232.0,114.0 234.2,115.6 236.5,117.1 238.8,118.6 241.0,120.0 243.3,121.3 245.6,122.6 247.8,123.7 250.1,124.8 252.4,125.8 254.6,126.7 256.9,127.6 259.2,128.4 261.4,129.1 263.7,129.8 266.0,130.4 268.2,131.0 270.5,131.5 272.8,131.9 275.1,132.3 277.3,132.7 279.6,133.0 281.9,133.3 284.1,133.6 286.4,133.8 288.7,134.0 290.9,134.2 293.2,134.3 295.5,134.5 297.7,134.6 300.0,134.7" fill="none" stroke="#dc2626" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.75" stroke-dasharray="3 2"/><polyline points="46.0,135.2 48.3,99.0 50.5,132.0 52.8,135.0 55.1,135.2 57.3,135.1 59.6,135.1 61.9,135.1 64.1,135.0 66.4,135.0 68.7,134.9 70.9,134.9 73.2,134.8 75.5,134.7 77.8,134.6 80.0,134.5 82.3,134.3 84.6,134.1 86.8,133.9 89.1,133.7 91.4,133.4 93.6,133.1 95.9,132.8 98.2,132.4 100.4,132.0 102.7,131.5 105.0,130.9 107.2,130.3 109.5,129.6 111.8,128.9 114.0,128.1 116.3,127.2 118.6,126.2 120.8,125.2 123.1,124.1 125.4,122.9 127.6,121.6 129.9,120.2 132.2,118.8 134.4,117.2 136.7,115.6 139.0,114.0 141.2,112.3 143.5,110.5 145.8,108.7 148.1,106.8 150.3,104.9 152.6,103.1 154.9,101.2 157.1,99.3 159.4,97.5 161.7,95.7 163.9,93.9 166.2,92.3 168.5,90.7 170.7,89.3 173.0,87.9 175.3,86.7 177.5,85.6 179.8,84.7 182.1,84.0 184.3,83.4 186.6,83.0 188.9,82.8 191.1,82.7 193.4,82.9 195.7,83.2 197.9,83.7 200.2,84.4 202.5,85.3 204.8,86.3 207.0,87.4 209.3,88.7 211.6,90.1 213.8,91.7 216.1,93.3 218.4,95.0 220.6,96.7 222.9,98.6 225.2,100.4 227.4,102.3 229.7,104.2 232.0,106.1 234.2,107.9 236.5,109.8 238.8,111.6 241.0,113.3 243.3,115.0 245.6,116.6 247.8,118.2 250.1,119.6 252.4,121.0 254.6,122.4 256.9,123.6 259.2,124.8 261.4,125.8 263.7,126.8 266.0,127.7 268.2,128.6 270.5,129.4 272.8,130.1 275.1,130.7 277.3,131.3 279.6,131.8 281.9,132.2 284.1,132.6 286.4,133.0 288.7,133.3 290.9,133.6 293.2,133.8 295.5,134.0 297.7,134.2 300.0,134.4" fill="none" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="1"/><polyline points="46.0,133.0 48.3,95.9 50.5,129.1 52.8,131.7 55.1,131.4 57.3,130.9 59.6,130.4 61.9,129.8 64.1,129.2 66.4,128.5 68.7,127.7 70.9,126.9 73.2,125.9 75.5,125.0 77.8,123.9 80.0,122.8 82.3,121.6 84.6,120.3 86.8,118.9 89.1,117.5 91.4,116.0 93.6,114.4 95.9,112.7 98.2,110.9 100.4,109.1 102.7,107.2 105.0,105.3 107.2,103.3 109.5,101.2 111.8,99.1 114.0,97.0 116.3,94.9 118.6,92.7 120.8,90.5 123.1,88.4 125.4,86.2 127.6,84.1 129.9,82.1 132.2,80.1 134.4,78.1 136.7,76.3 139.0,74.5 141.2,72.9 143.5,71.3 145.8,69.9 148.1,68.6 150.3,67.5 152.6,66.5 154.9,65.7 157.1,65.0 159.4,64.6 161.7,64.3 163.9,64.1 166.2,64.2 168.5,64.4 170.7,64.8 173.0,65.4 175.3,66.1 177.5,67.1 179.8,68.1 182.1,69.3 184.3,70.7 186.6,72.2 188.9,73.8 191.1,75.5 193.4,77.3 195.7,79.2 197.9,81.2 200.2,83.2 202.5,85.3 204.8,87.5 207.0,89.6 209.3,91.8 211.6,93.9 213.8,96.1 216.1,98.2 218.4,100.3 220.6,102.4 222.9,104.4 225.2,106.4 227.4,108.3 229.7,110.1 232.0,111.9 234.2,113.6 236.5,115.3 238.8,116.8 241.0,118.3 243.3,119.7 245.6,121.0 247.8,122.3 250.1,123.4 252.4,124.5 254.6,125.5 256.9,126.5 259.2,127.3 261.4,128.1 263.7,128.9 266.0,129.5 268.2,130.2 270.5,130.7 272.8,131.2 275.1,131.7 277.3,132.1 279.6,132.5 281.9,132.8 284.1,133.1 286.4,133.4 288.7,133.6 290.9,133.8 293.2,134.0 295.5,134.2 297.7,134.3 300.0,134.5" fill="none" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="1"/><polyline points="46.0,134.7 48.3,102.3 50.5,131.6 52.8,134.1 55.1,134.1 57.3,133.9 59.6,133.6 61.9,133.4 64.1,133.0 66.4,132.7 68.7,132.3 70.9,131.8 73.2,131.3 75.5,130.7 77.8,130.0 80.0,129.3 82.3,128.5 84.6,127.6 86.8,126.6 89.1,125.6 91.4,124.4 93.6,123.2 95.9,121.8 98.2,120.3 100.4,118.8 102.7,117.1 105.0,115.4 107.2,113.5 109.5,111.6 111.8,109.6 114.0,107.5 116.3,105.3 118.6,103.1 120.8,100.8 123.1,98.5 125.4,96.2 127.6,93.9 129.9,91.6 132.2,89.3 134.4,87.1 136.7,85.0 139.0,82.9 141.2,80.9 143.5,79.1 145.8,77.4 148.1,75.9 150.3,74.5 152.6,73.3 154.9,72.3 157.1,71.5 159.4,70.9 161.7,70.6 163.9,70.4 166.2,70.5 168.5,70.8 170.7,71.4 173.0,72.1 175.3,73.1 177.5,74.2 179.8,75.5 182.1,77.1 184.3,78.7 186.6,80.5 188.9,82.5 191.1,84.5 193.4,86.6 195.7,88.9 197.9,91.1 200.2,93.4 202.5,95.7 204.8,98.0 207.0,100.3 209.3,102.6 211.6,104.8 213.8,107.0 216.1,109.1 218.4,111.2 220.6,113.1 222.9,115.0 225.2,116.7 227.4,118.4 229.7,120.0 232.0,121.5 234.2,122.9 236.5,124.1 238.8,125.3 241.0,126.4 243.3,127.4 245.6,128.3 247.8,129.1 250.1,129.9 252.4,130.6 254.6,131.2 256.9,131.7 259.2,132.2 261.4,132.6 263.7,133.0 266.0,133.3 268.2,133.6 270.5,133.8 272.8,134.1 275.1,134.2 277.3,134.4 279.6,134.5 281.9,134.7 284.1,134.8 286.4,134.9 288.7,134.9 290.9,135.0 293.2,135.0 295.5,135.1 297.7,135.1 300.0,135.1" fill="none" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="1"/><polyline points="46.0,133.6 48.3,103.3 50.5,130.4 52.8,132.5 55.1,132.3 57.3,132.0 59.6,131.5 61.9,131.0 64.1,130.5 66.4,129.9 68.7,129.2 70.9,128.5 73.2,127.8 75.5,126.9 77.8,126.0 80.0,125.0 82.3,123.9 84.6,122.8 86.8,121.6 89.1,120.2 91.4,118.9 93.6,117.4 95.9,115.8 98.2,114.2 100.4,112.4 102.7,110.6 105.0,108.8 107.2,106.8 109.5,104.8 111.8,102.7 114.0,100.6 116.3,98.4 118.6,96.2 120.8,94.0 123.1,91.7 125.4,89.5 127.6,87.2 129.9,85.0 132.2,82.8 134.4,80.6 136.7,78.5 139.0,76.5 141.2,74.5 143.5,72.7 145.8,70.9 148.1,69.3 150.3,67.8 152.6,66.4 154.9,65.2 157.1,64.2 159.4,63.3 161.7,62.6 163.9,62.0 166.2,61.7 168.5,61.5 170.7,61.6 173.0,61.8 175.3,62.2 177.5,62.8 179.8,63.5 182.1,64.4 184.3,65.5 186.6,66.8 188.9,68.2 191.1,69.7 193.4,71.4 195.7,73.2 197.9,75.1 200.2,77.1 202.5,79.1 204.8,81.3 207.0,83.4 209.3,85.6 211.6,87.9 213.8,90.1 216.1,92.4 218.4,94.6 220.6,96.9 222.9,99.1 225.2,101.2 227.4,103.3 229.7,105.4 232.0,107.4 234.2,109.3 236.5,111.2 238.8,112.9 241.0,114.6 243.3,116.3 245.6,117.8 247.8,119.3 250.1,120.6 252.4,121.9 254.6,123.1 256.9,124.2 259.2,125.3 261.4,126.3 263.7,127.2 266.0,128.0 268.2,128.7 270.5,129.4 272.8,130.1 275.1,130.6 277.3,131.2 279.6,131.6 281.9,132.1 284.1,132.5 286.4,132.8 288.7,133.1 290.9,133.4 293.2,133.6 295.5,133.8 297.7,134.0 300.0,134.2" fill="none" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="1"/><line x1="210" y1="24" x2="224" y2="24" stroke="#0f172a" stroke-width="1.6"/><text x="228.0" y="27.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >observé</text><line x1="210" y1="36" x2="224" y2="36" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="3 2"/><text x="228.0" y="39.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="400" >synthétique</text></svg></div>
+                    <div class="p-6">
+                        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">pharmacologie clinique</p>
+                        <h3 class="text-base font-bold mb-2">Données synthétiques pour la bioéquivalence</h3>
+                        <p class="text-sm text-slate-700">Modèles génératifs (VAE, WGAN-GP, VAE informé par la physique, copules) qui apprennent à partir d'un petit nombre de profils PK réels, avec des simulations d'essais Monte-Carlo pour tester l'erreur de type I et optimiser la taille des essais.</p>
+                    </div>
+                </article>
+                <article class="section-card md:col-span-2 md:grid md:grid-cols-2">
+                    <div class="border-b-2 md:border-b-0 md:border-r-2 border-slate-900"><svg viewBox="0 0 320 176" role="img" aria-label="Pipeline génomique, des FASTQ aux biomarqueurs" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto block"><rect x="0" y="0" width="320" height="176" fill="#f1f5f9"/><rect x="10" y="80" width="44" height="20" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="32.0" y="93.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >FASTQ</text><rect x="70" y="80" width="40" height="20" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="90.0" y="93.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >QC</text><rect x="126" y="44" width="48" height="20" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="150.0" y="57.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >alignement</text><rect x="126" y="116" width="48" height="20" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="150.0" y="129.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >quant</text><rect x="190" y="44" width="52" height="20" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="216.0" y="57.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >variants</text><rect x="190" y="116" width="52" height="20" fill="white" stroke="#0f172a" stroke-width="1.3"/><text x="216.0" y="129.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >TPM</text><rect x="258" y="30" width="54" height="20" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.3"/><text x="285.0" y="43.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >HRD·MSI</text><rect x="258" y="58" width="54" height="20" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.3"/><text x="285.0" y="71.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >TMB</text><rect x="258" y="104" width="54" height="20" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.3"/><text x="285.0" y="117.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >DE·GSEA</text><rect x="258" y="132" width="54" height="20" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.3"/><text x="285.0" y="145.5" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#0f172a" font-weight="400" >signature ML</text><path d="M54 90 C62.0 90 62.0 90 66 90" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M65 87 L70 90 L65 93" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M110 90 C118.0 90 118.0 54 122 54" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M121 51 L126 54 L121 57" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M110 90 C118.0 90 118.0 126 122 126" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M121 123 L126 126 L121 129" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M174 54 C182.0 54 182.0 54 186 54" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M185 51 L190 54 L185 57" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M174 126 C182.0 126 182.0 126 186 126" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M185 123 L190 126 L185 129" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M242 54 C250.0 54 250.0 40 254 40" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M253 37 L258 40 L253 43" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M242 54 C250.0 54 250.0 68 254 68" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M253 65 L258 68 L253 71" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M242 126 C250.0 126 250.0 114 254 114" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M253 111 L258 114 L253 117" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M242 126 C250.0 126 250.0 142 254 142" fill="none" stroke="#0f172a" stroke-width="1"/><path d="M253 139 L258 142 L253 145" fill="none" stroke="#0f172a" stroke-width="1"/><text x="10.0" y="22.0" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="start" fill="#0f172a" font-weight="700" >RNA-seq · appel de variants · ADNtc</text><rect x="8" y="160" width="304" height="12" fill="none" stroke="#dc2626" stroke-width="0.9" stroke-dasharray="3 2"/><text x="160.0" y="169.0" font-size="7.5" font-family="'JetBrains Mono', monospace" text-anchor="middle" fill="#dc2626" font-weight="400" >données CRO & fournisseurs → hub omique central</text></svg></div>
+                    <div class="p-6 md:self-center">
+                        <p class="text-xs uppercase tracking-wider text-slate-500 mb-1">bioinformatique</p>
+                        <h3 class="text-base font-bold mb-2">Pipelines génomiques & hub omique</h3>
+                        <p class="text-sm text-slate-700">Pipelines RNA-seq, d'appel de variants et d'ADN tumoral circulant avec scores HRD, MSI et TMB, et transferts automatisés depuis les CRO et les prestataires de séquençage vers un hub omique central, aux côtés de TCGA, CCLE et CPTAC.</p>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="text-xl font-bold mt-12 mb-6">compétitions & open source</h3>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="section-card p-6 flex flex-col">
+                    <h4 class="text-base font-bold mb-1">Prédiction de la développabilité des anticorps</h4>
+                    <p class="text-xs text-slate-500 mb-3">Ginkgo Datapoints AbDev Competition · 2025</p>
+                    <p class="text-sm text-slate-700 mb-3 flex-grow">Prédiction de 5 propriétés de développabilité à partir de la séquence, avec des ensembles de représentations de modèles de langage protéiques (ProtT5, p-IgGen, ESM-2) et un empilement LightGBM / ridge.</p>
+                    <a href="https://huggingface.co/blog/ginkgo-datapoints/2025-abdev-competition" target="_blank" class="text-sm underline hover:text-slate-600">Compétition →</a>
+                </div>
+                <div class="section-card p-6 flex flex-col">
+                    <h4 class="text-base font-bold mb-1">Profilage immunitaire adaptatif</h4>
+                    <p class="text-xs text-slate-500 mb-3">Kaggle · AIRR-ML-25</p>
+                    <p class="text-sm text-slate-700 mb-3 flex-grow">Prédiction de l'état immunitaire à partir des répertoires de récepteurs des lymphocytes T/B, avec des modèles de référence XGBoost sur k-mers et de l'apprentissage multi-instances ESM-2.</p>
+                    <a href="https://www.kaggle.com/competitions/adaptive-immune-profiling-challenge-2025" target="_blank" class="text-sm underline hover:text-slate-600">Compétition →</a>
+                </div>
+                <div class="section-card p-6 flex flex-col">
+                    <h4 class="text-base font-bold mb-1">Awesome Biopharma Foundation Models</h4>
+                    <p class="text-xs text-slate-500 mb-3">Open source</p>
+                    <p class="text-sm text-slate-700 mb-3 flex-grow">Catalogue de modèles de fondation pour la R&D biopharmaceutique : cellule unique & génomique, séquence & structure des anticorps, conception générative, petites molécules & ADC.</p>
+                    <a href="https://github.com/vaibhav90/awesome-biopharma-foundation-models" target="_blank" class="text-sm underline hover:text-slate-600">GitHub →</a>
+                </div>
+                <div class="section-card p-6 flex flex-col">
+                    <h4 class="text-base font-bold mb-1">Mobility Prediction Literature</h4>
+                    <p class="text-xs text-slate-500 mb-3">Open source</p>
+                    <p class="text-sm text-slate-700 mb-3 flex-grow">Sélection de travaux sur la modélisation de la mobilité humaine et la prédiction du prochain lieu, commencée pendant mon doctorat. Mon dépôt le plus étoilé.</p>
+                    <a href="https://github.com/vaibhav90/Mobility-Prediction-Literature" target="_blank" class="text-sm underline hover:text-slate-600">GitHub →</a>
+                </div>
+                <div class="section-card p-6 flex flex-col">
+                    <h4 class="text-base font-bold mb-1">Geospatial Precipitation Pipeline</h4>
+                    <p class="text-xs text-slate-500 mb-3">Open source</p>
+                    <p class="text-sm text-slate-700 mb-3 flex-grow">Transforme les données de précipitations ERA5 en fichiers Parquet interrogeables avec indexation géospatiale.</p>
+                    <a href="https://github.com/vaibhav90/geospatial-precipitation-pipeline" target="_blank" class="text-sm underline hover:text-slate-600">GitHub →</a>
+                </div>
+                <div class="section-card p-6 flex flex-col">
+                    <h4 class="text-base font-bold mb-1">Plus sur GitHub</h4>
+                    <p class="text-xs text-slate-500 mb-3">Code d'articles & notes d'ingénierie</p>
+                    <p class="text-sm text-slate-700 mb-3 flex-grow">Code de mes articles SIGSPATIAL & SGX, choix technologiques fondés sur les données pour un entrepôt de données cliniques & un aide-mémoire de réglage PostgreSQL.</p>
+                    <a href="https://github.com/vaibhav90" target="_blank" class="text-sm underline hover:text-slate-600">github.com/vaibhav90 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 border-b-4 border-slate-900 inline-block pb-1">expérience</h2>
+            
+            <div class="space-y-8">
+                <!-- Current Position -->
+                <div class="section-card p-6 relative">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <img src="../portfolio_new/logos/debio.png" alt="Debiopharm" class="max-h-12 w-auto grayscale opacity-70">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold">Engineering Manager: Data & Bioinformatics</h3>
+                                    <p class="text-base text-slate-700">Debiopharm</p>
+                                </div>
+                                <div class="text-sm text-slate-600 mt-2 md:mt-0 md:text-right">
+                                    <div>juillet 2025 – aujourd'hui</div>
+                                    <div>Lausanne, Suisse</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm ml-20">
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Direction d'une équipe pluridisciplinaire d'ingénieurs données et de bioinformaticiens pour concevoir et livrer la prochaine génération de plateformes de données et de bioinformatique</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Direction de l'analyse préclinique des essais in vitro (cytotoxicité, internalisation, liaison) et des études d'efficacité in vivo, ainsi que de la découverte de biomarqueurs transcriptomiques pour des programmes d'oncologie en phase clinique</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Évaluation in silico de la développabilité des anticorps et du risque CMC pour les programmes d'anticorps conjugués (ADC), à l'aide de modèles de langage protéiques et de prédiction de structure</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Développement et déploiement d'une douzaine d'applications R Shiny et Streamlit pour la médecine translationnelle : efficacité in vivo, pharmacocinétique inter-études et exploration de données omiques publiques</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Conception d'un entrepôt de données et d'un tableau de bord de suivi pour un programme de découverte d'anticorps, avec ingestion automatisée des livrables des CRO</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Pipelines RNA-seq, d'appel de variants et d'ADN tumoral circulant (scores HRD, MSI et TMB) et transferts multi-omiques sécurisés et automatisés depuis les CRO et les prestataires de séquençage</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Prototypes de modèles génératifs et de simulations Monte-Carlo pour la conception d'essais de bioéquivalence, et d'un pipeline de pathologie numérique IHC pour le score Ki-67</span></li>
+                    </ul>
+                </div>
+
+                <!-- Data Engineering Team Lead -->
+                <div class="section-card p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <img src="../portfolio_new/logos/debio.png" alt="Debiopharm" class="max-h-12 w-auto grayscale opacity-70">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold">Data Engineering Team Lead</h3>
+                                    <p class="text-base text-slate-700">Debiopharm</p>
+                                </div>
+                                <div class="text-sm text-slate-600 mt-2 md:mt-0 md:text-right">
+                                    <div>juillet 2022 – juin 2025</div>
+                                    <div>Lausanne, Suisse</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm ml-20">
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Architecture et direction du développement full-stack de la plateforme de données la plus utilisée de l'entreprise, le Central Data Repository : ingestion et contrôle qualité automatisés des données d'essais cliniques et non cliniques à l'échelle de l'entreprise, devenu le hub de données central de tous les programmes de R&D</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Déploiement de plateformes d'analyse scientifique sur mesure (SAS Viya, Posit, Dotmatics, Expressions) sur une infrastructure cloud maîtrisée par l'entreprise, formant un écosystème unifié relié au référentiel central de données, avec des exigences élevées de performance et de gouvernance des données</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Plateforme de reconnaissance d'entités et de recherche exploitant les bases de publications scientifiques - automatisation de la veille interne</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Mise en production d'applications fondées sur des grands modèles de langage, respectueuses de la confidentialité, pour simplifier l'analyse de documents et la rédaction de protocoles d'étude</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Soutien à l'équipe conformité par la validation de systèmes informatisés, la qualification d'infrastructure et les audits de sécurité en DevOps - automatisation des processus GxP</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Responsable de la due diligence technique de start-up de la santé (stack technique, stratégie logicielle et ML) pour éclairer les décisions d'investissement de notre fonds de capital-risque</span></li>
+                    </ul>
+                </div>
+
+                <!-- SOPHiA GENETICS -->
+                <div class="section-card p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <img src="../portfolio_new/logos/sophia.jpg" alt="SOPHiA GENETICS" class="max-h-14 w-auto grayscale opacity-70">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold">Senior Data Engineer</h3>
+                                    <p class="text-base text-slate-700">SOPHiA GENETICS</p>
+                                </div>
+                                <div class="text-sm text-slate-600 mt-2 md:mt-0 md:text-right">
+                                    <div>avril 2021 – juin 2022</div>
+                                    <div>Lausanne, Suisse</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm ml-20">
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Pipelines ETL à l'échelle du téraoctet transformant les données génomiques brutes en données prêtes pour l'analyse - temps de traitement fortement réduit</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Développement d'API et d'outils en ligne de commande exposant les fonctionnalités des bases de données aux équipes internes - démocratisation des données et contrôle des accès</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Tests de non-régression pour les pipelines bioinformatiques de détection de variants et tableaux de bord de KPI en temps réel</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Rédaction de spécifications formelles TLA+ des opérations ETL, permettant de quantifier et de comparer la correction logique de toute la chaîne de données</span></li>
+                    </ul>
+                </div>
+
+                <!-- GenLots -->
+                <div class="section-card p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <img src="../portfolio_new/logos/genlots.png" alt="GenLots" class="max-h-12 w-auto grayscale opacity-70">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold">Software Engineer | Research & Development Lead</h3>
+                                    <p class="text-base text-slate-700">GenLots</p>
+                                </div>
+                                <div class="text-sm text-slate-600 mt-2 md:mt-0 md:text-right">
+                                    <div>septembre 2019 – mars 2021</div>
+                                    <div>Lausanne, Suisse</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm ml-20">
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Architecture microservices simplifiant l'ingestion, la transformation et la livraison des données ERP des clients vers des services ML en production</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Déploiement d'une solution d'apprentissage par renforcement optimisant la planification de bout en bout de la supply chain, la gestion d'entrepôt et les émissions de CO2</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Suite d'outils de reporting et de suivi intégrés à des tableaux de bord fournissant aux clients des indicateurs de performance en temps réel</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Direction de projets de recherche avec des manufactures horlogères suisses pour prévoir les besoins en matières et stabiliser les chaînes d'approvisionnement</span></li>
+                    </ul>
+                </div>
+
+                <!-- HEC Lausanne -->
+                <div class="section-card p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <img src="../portfolio_new/logos/hec.png" alt="HEC Lausanne" class="max-h-12 w-auto grayscale opacity-70">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold">Research Scientist</h3>
+                                    <p class="text-base text-slate-700">Distributed Object Programming Lab</p>
+                                </div>
+                                <div class="text-sm text-slate-600 mt-2 md:mt-0 md:text-right">
+                                    <div>novembre 2015 – août 2019</div>
+                                    <div>Lausanne, Suisse</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm ml-20">
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Conception, avec des entreprises de transport public, de systèmes collectant en temps réel et à haute fréquence les données de fréquentation dans un entrepôt de données</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Plateforme d'apprentissage automatique pour détecter et réduire de manière proactive la fraude dans le réseau de transports publics lausannois</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Direction du développement de la plateforme d'une vaste collecte de données de mobilité spatio-temporelles (plus de 300 participants) au service de la recherche sur la confidentialité en ML</span></li>
+                    </ul>
+                </div>
+
+                <!-- ETH Zürich -->
+                <div class="section-card p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <img src="../portfolio_new/logos/eth.png" alt="ETH Zürich" class="max-h-12 w-auto grayscale opacity-70">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold">Project Engineer</h3>
+                                    <p class="text-base text-slate-700">ETH Zürich</p>
+                                </div>
+                                <div class="text-sm text-slate-600 mt-2 md:mt-0 md:text-right">
+                                    <div>janvier 2015 – août 2015</div>
+                                    <div>Zurich, Suisse</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm ml-20">
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Plateforme de radio logicielle pour tester de manière fiable les produits IoT, générant les interférences d'appareils sans fil</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Déploiement de la plateforme en production à l'ETH Zurich et à la TU Berlin, avec des outils de configuration à distance et de suivi des performances</span></li>
+                    </ul>
+                </div>
+
+                <!-- BOLT IoT -->
+                <div class="section-card p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <img src="../portfolio_new/logos/bolt.jpeg" alt="BOLT IoT" class="max-h-12 w-auto grayscale opacity-70">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold">Embedded Systems Engineer</h3>
+                                    <p class="text-base text-slate-700">BOLT IoT</p>
+                                </div>
+                                <div class="text-sm text-slate-600 mt-2 md:mt-0 md:text-right">
+                                    <div>septembre 2011 – janvier 2013</div>
+                                    <div>Goa, Inde</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm ml-20">
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Conception de circuits imprimés pour des plateformes embarquées en robotique et IoT, en collaboration avec les équipes logicielles pour l'intégration du firmware</span></li>
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Outils et applications d'évaluation des performances, de tests de validation, de simulations CEM et de certification de conformité</span></li>
+                    </ul>
+                </div>
+
+                <!-- National Institute of Oceanography -->
+                <div class="section-card p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
+                            <img src="../portfolio_new/logos/nio.png" alt="NIO" class="max-h-12 w-auto grayscale opacity-70">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                                <div>
+                                    <h3 class="text-lg font-bold">Project Intern</h3>
+                                    <p class="text-base text-slate-700">National Institute of Oceanography</p>
+                                </div>
+                                <div class="text-sm text-slate-600 mt-2 md:mt-0 md:text-right">
+                                    <div>juin 2011 – août 2011</div>
+                                    <div>Goa, Inde</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm ml-20">
+                        <li class="flex gap-2"><span class="text-slate-900">▹</span><span>Contribution à un projet de localisation de véhicules sous-marins autonomes : algorithmes de triangulation, communication satellite et modélisation des courants océaniques</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-10 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 border-b-4 border-slate-900 inline-block pb-1">compétences</h2>
+            
+            <div class="space-y-4">
+                <!-- Data & Platform Engineering -->
+                <details class="section-card p-6" open>
+                    <summary class="text-lg font-bold cursor-pointer select-none hover:text-slate-600 transition">
+                        ▶ Ingénierie logicielle & données
+                    </summary>
+                    <div class="mt-4 space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Ingénierie logicielle</h4>
+                            <p class="text-sm text-slate-700 mb-2">Un logiciel propre, testé et maintenable sur toute la stack, du firmware embarqué aux applications web et aux services de données.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Python</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">R</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">TypeScript</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">SvelteKit</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">C# / .NET</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Rust</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Java</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Scala</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">SQL</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">C (embarqué)</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Test-Driven Development</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">REST APIs</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Architecture de plateformes d'entreprise</h4>
+                            <p class="text-sm text-slate-700 mb-2">Conception et construction de plateformes évolutives en production, de l'ingestion des données aux applications utilisateurs, en privilégiant la fiabilité, la performance et la maintenabilité.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Systèmes distribués</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Architecture microservices</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Domain-Driven Design (DDD)</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Architecture en oignon</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Conception d'API</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Intégration de systèmes</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Architecture de données</h4>
+                            <p class="text-sm text-slate-700 mb-2">Conception et mise en œuvre de référentiels de données, d'entrepôts de données et de systèmes de traitement en temps réel à l'échelle de l'entreprise.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Entrepôts de données</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Data Lakes</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">SQL (PostgreSQL)</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">NoSQL (MongoDB)</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Pipelines ETL/ELT</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">DuckDB</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">dbt</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Apache Airflow</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Modélisation en étoile</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Cloud & infrastructure</h4>
+                            <p class="text-sm text-slate-700 mb-2">Déploiement et gestion d'applications et d'infrastructures cloud natives et évolutives.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">AWS</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Azure</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">GCP</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Docker</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Kubernetes</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Terraform</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Infrastructure as Code (IaC)</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Terragrunt</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Transferts S3 ↔ Azure Blob</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Microsoft Graph API</span>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- AI & Machine Learning -->
+                <details class="section-card p-6">
+                    <summary class="text-lg font-bold cursor-pointer select-none hover:text-slate-600 transition">
+                        ▶ IA & apprentissage automatique
+                    </summary>
+                    <div class="mt-4 space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Systèmes ML en production (MLOps)</h4>
+                            <p class="text-sm text-slate-700 mb-2">Construction et déploiement de pipelines et de services ML robustes, évolutifs et reproductibles.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">PyTorch</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Scikit-learn</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">MLflow</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Kubeflow</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">CI/CD pour le ML</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Grands modèles de langage (LLM)</h4>
+                            <p class="text-sm text-slate-700 mb-2">Développement et mise en production d'applications LLM respectueuses de la confidentialité pour l'analyse et la génération de documents scientifiques.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Hugging Face</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">LangChain</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Bases de données vectorielles</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Prompt Engineering</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Modèles de fondation protéiques & omiques</h4>
+                            <p class="text-sm text-slate-700 mb-2">Modèles de langage protéiques, prédicteurs de structure et modèles de fondation omiques appliqués à l'ingénierie des anticorps et à la découverte de biomarqueurs.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">ESM-2</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">ProtT5</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">AbLang-2</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">p-IgGen</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">SaProt</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">IgFold</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">AlphaFold</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Geneformer</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">BulkFormer</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Modélisation prédictive & générative</h4>
+                            <p class="text-sm text-slate-700 mb-2">Plateformes fondées sur le ML pour l'analyse prédictive et statistique.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Python (Pandas, NumPy)</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Jupyter</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Apprentissage par renforcement</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">XGBoost</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">LightGBM</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Apprentissage multi-instances</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">VAE / WGAN-GP</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Réseaux de neurones informés par la physique</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Vision par ordinateur (U-Net)</span>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Bioinformatics & Computational Biology -->
+                <details class="section-card p-6">
+                    <summary class="text-lg font-bold cursor-pointer select-none hover:text-slate-600 transition">
+                        ▶ Biologie computationnelle & bioinformatique
+                    </summary>
+                    <div class="mt-4 space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Traitement de données multi-omiques</h4>
+                            <p class="text-sm text-slate-700 mb-2">Pipelines bioinformatiques pour harmoniser et analyser les données génomiques, transcriptomiques et autres données omiques.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Nextflow</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Snakemake</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Bioconductor</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Pipelines RNA-seq & appel de variants</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">STAR</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">MultiQC</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">PyDESeq2</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">GSEApy / MSigDB</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">ComBat</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">HRD / MSI / TMB</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">ADNtc / biopsie liquide</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">TCGA · CCLE · CPTAC</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Ingénierie & développabilité des anticorps</h4>
+                            <p class="text-sm text-slate-700 mb-2">Évaluation de la développabilité des anticorps fondée sur la séquence et la structure pour les programmes ADC.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">ANARCI / IMGT</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">CamSol</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">TANGO</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Foldseek</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Risques de modifications post-traductionnelles</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Ingénierie des formats d'anticorps</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Pharmacologie préclinique & PK</h4>
+                            <p class="text-sm text-slate-700 mb-2">Analyse des essais in vitro et précliniques, études de pharmacocinétique et simulation pour la conception d'essais cliniques.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Dose-réponse & IC50</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Essais d'internalisation & de liaison</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Études d'efficacité PDX / CDX</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">TGI · AUC · RTV</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">PK / NCA</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Simulation PopPK</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Statistiques de bioéquivalence</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Chémoinformatique</h4>
+                            <p class="text-sm text-slate-700 mb-2">Soutien à la recherche sur les petites molécules et les linker-payloads par l'analyse de données et la modélisation moléculaire.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">RDKit</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Chémoinformatique</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Outils de modélisation moléculaire</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Découverte de biomarqueurs</h4>
+                            <p class="text-sm text-slate-700 mb-2">Plateformes et stratégies pour identifier et valider de nouveaux biomarqueurs à partir de jeux de données complexes.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">R</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Python</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Analyse statistique</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Visualisation de données</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Pathologie numérique (WSI, IHC)</span>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Quality & DevOps -->
+                <details class="section-card p-6">
+                    <summary class="text-lg font-bold cursor-pointer select-none hover:text-slate-600 transition">
+                        ▶ Qualité & DevOps
+                    </summary>
+                    <div class="mt-4 space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Frameworks de tests automatisés</h4>
+                            <p class="text-sm text-slate-700 mb-2">Conception et gestion de systèmes de tests de non-régression et de performance pour des pipelines de données critiques.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Pytest</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Intégration CI/CD</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">GitHub Actions</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Jenkins</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Validation & qualification de systèmes</h4>
+                            <p class="text-sm text-slate-700 mb-2">Automatisation DevOps pour la conformité GxP, la qualification d'infrastructure et les audits de sécurité.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Conformité GxP</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Méthodes DevOps</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Audits automatisés</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Méthodes formelles</h4>
+                            <p class="text-sm text-slate-700 mb-2">Spécifications formelles pour vérifier la correction logique et la fiabilité de systèmes de données complexes.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">TLA+</span>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Leadership & Strategy -->
+                <details class="section-card p-6">
+                    <summary class="text-lg font-bold cursor-pointer select-none hover:text-slate-600 transition">
+                        ▶ Leadership & stratégie
+                    </summary>
+                    <div class="mt-4 space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Direction d'équipes pluridisciplinaires</h4>
+                            <p class="text-sm text-slate-700 mb-2">Direction d'équipes d'ingénieurs données, de bioinformaticiens et de développeurs logiciels.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Agile</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Scrum</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Kanban</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Jira</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Confluence</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Stratégie technique & feuilles de route</h4>
+                            <p class="text-sm text-slate-700 mb-2">Définition de la vision technique des plateformes d'IA et de données en environnement de R&D.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Feuilles de route produit</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Gestion des parties prenantes</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Sélection de fournisseurs & plateformes</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1 text-sm">Due diligence technique</h4>
+                            <p class="text-sm text-slate-700 mb-2">Évaluation des stacks technologiques et des stratégies ML de start-up de la santé en vue d'investissements.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Évaluation de stack technique</span>
+                                <span class="px-2 py-1 bg-slate-200 border border-slate-400 text-xs">Évaluation des risques</span>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 border-b-4 border-slate-900 inline-block pb-1">formation</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="section-card p-6">
+                    <div class="mb-4 h-20 flex items-center justify-center">
+                        <img src="../portfolio_new/logos/hec.png" alt="UNIL" class="max-h-16 w-auto grayscale">
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Doctorat en informatique</h3>
+                    <p class="text-base text-slate-700 mb-1">Université de Lausanne - Département des systèmes d'information</p>
+                    <p class="text-sm text-slate-600 mb-2">novembre 2015 – août 2019</p>
+                    <p class="text-sm">Thèse : systèmes d'information pour un apprentissage automatique respectueux de la vie privée</p>
+                </div>
+                
+                <div class="section-card p-6">
+                    <div class="mb-4 h-20 flex items-center justify-center gap-4">
+                        <img src="../portfolio_new/logos/eth.png" alt="ETH Zürich" class="max-h-10 max-w-[45%] w-auto grayscale">
+                        <img src="../portfolio_new/logos/tue.png" alt="TU/e" class="max-h-14 max-w-[45%] w-auto grayscale">
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Master en systèmes embarqués</h3>
+                    <p class="text-base text-slate-700 mb-1">ETH Zürich & Eindhoven University of Technology</p>
+                    <p class="text-sm text-slate-600 mb-2">août 2014 – août 2015</p>
+                    <p class="text-sm">Mémoire de master à l'ETH Zurich · Diplômé cum laude</p>
+                </div>
+                
+                <div class="section-card p-6">
+                    <div class="mb-4 h-20 flex items-center justify-center">
+                        <img src="../portfolio_new/logos/tub.png" alt="TU Berlin" class="max-h-16 w-auto grayscale">
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Master en technologies de l'information & de la communication</h3>
+                    <p class="text-base text-slate-700 mb-1">Technische Universität Berlin</p>
+                    <p class="text-sm text-slate-600 mb-2">février 2013 – août 2014</p>
+                    <p class="text-sm">Diplômé avec mention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-10 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 border-b-4 border-slate-900 inline-block pb-1">publications avec comité de lecture</h2>
+            
+            <div class="space-y-4 mb-8">
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Generating Synthetic Mobility Traffic using Recurrent Neural Networks</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">ACM SIGSPATIAL - AI and Deep Learning for Geographic Knowledge Discovery, 2017</p>
+                    <a href="http://doplab.unil.ch/wp-content/uploads/2017/11/GeoAI17.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Examining the Limits of Predictability of Human Mobility</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, A. Mahalunkar, B. Garbinato, J. D. Kelleher</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">Entropy, 2019</p>
+                    <a href="https://www.mdpi.com/1099-4300/21/4/432/pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Generative Models for Simulating Mobility Trajectories</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, N. Tagasovska, T. Vatter, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">Neural Information Processing Systems Workshop on spatiotemporal modeling, 2018</p>
+                    <a href="https://arxiv.org/abs/1811.12801" target="_blank" class="text-sm underline hover:text-slate-600">Prépublication →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">MobiDict: A Mobility Prediction System Leveraging Realtime Location Data Streams</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong><sup>*</sup>, A. Moro<sup>*</sup>, B. Garbinato (<sup>*</sup>co-premiers auteurs)</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">ACM SIGSPATIAL Workshop on GeoStreaming, 2016</p>
+                    <a href="http://doplab.unil.ch/wp-content/uploads/2017/11/main.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Information Disclosure in Location-based Services: An Extended Privacy Calculus Model</h3>
+                    <p class="text-sm text-slate-700 mb-1">D. Naous, <strong>V. Kulkarni</strong>, C. Legner, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">International Conference on Information Systems (ICIS), 2019</p>
+                    <a href="https://www.researchgate.net/profile/Christine_Legner/publication/336471233_Information_Disclosure_in_Location-based_Services_An_Extended_Privacy_Calculus_Model/links/5da1d56c92851c6b4bcfa761/Information-Disclosure-in-Location-based-Services-An-Extended-Privacy-Calculus-Model.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Privacy-Preserving Location-Based Services by using Intel SGX</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, B. Chapuis, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">ACM SenSys Workshop on Human-centered Sensing, Networking, and Systems, 2017</p>
+                    <a href="http://doplab.unil.ch/wp-content/uploads/2019/04/p13-Kulkarni.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">20 Years of Mobility Modeling & Prediction: Trends, Shortcomings & Perspectives</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">Advances in Geographic Information Systems (ACM SIGSPATIAL), 2019</p>
+                    <a href="https://arxiv.org/pdf/1906.07451.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Capturing Complex Behavior for Predicting Distant Future Trajectories</h3>
+                    <p class="text-sm text-slate-700 mb-1">B. Chapuis, A. Moro, <strong>V. Kulkarni</strong>, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">ACM SIGSPATIAL Workshop on Mobile Geographic Information Systems, 2016</p>
+                    <a href="http://doplab.unil.ch/wp-content/uploads/2016/12/main.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">On the Inability of Markov Models to Capture Criticality in Human Mobility</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, A. Mahalunkar, B. Garbinato, J. D. Kelleher</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">28th International Conference on Artificial Neural Networks (ICANN), 2019</p>
+                    <a href="https://arxiv.org/abs/1807.11386" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Extracting Hotspots without A-priori by Enabling Signal Processing over Geospatial Data</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, A. Moro, B. Chapuis, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">Advances in Geographic Information Systems (ACM SIGSPATIAL), 2017</p>
+                    <a href="http://doplab.unil.ch/wp-content/uploads/2019/01/main.pdf" target="_blank" class="text-sm underline hover:text-slate-600">Prépublication →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Breadcrumbs: A Feature Rich Mobility Dataset with Point of Interest Annotation</h3>
+                    <p class="text-sm text-slate-700 mb-1">A. Moro, <strong>V. Kulkarni</strong>, P. Ghiringhelli, B. Chapuis, K. Huguenin, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">Advances in Geographic Information Systems (ACM SIGSPATIAL), 2019</p>
+                    <a href="https://arxiv.org/pdf/1906.12322.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Controlled Interference Generation for Wireless Coexistence Research</h3>
+                    <p class="text-sm text-slate-700 mb-1">A. Hithnawi, <strong>V. Kulkarni</strong>, S. Li, H. Shafagh</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">ACM MobiCom workshop in Software Radio Implementation Forum (SRIF), 2016</p>
+                    <a href="http://www.vs.inf.ethz.ch/publ/papers/hanwar_SRIF15_CIG.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Capstone: Mobility Modeling on Smartphones to Achieve Privacy by Design</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, A. Moro, B. Chapuis, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">IEEE Conference On Trust, Security & Privacy In Computing & Communications, 2018</p>
+                    <a href="https://arxiv.org/pdf/1802.07132.pdf" target="_blank" class="text-sm underline hover:text-slate-600">Prépublication →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">A Mobility Prediction System Leveraging Realtime Location Data Streams</h3>
+                    <p class="text-sm text-slate-700 mb-1"><strong>V. Kulkarni</strong>, A. Moro, B. Garbinato</p>
+                    <p class="text-sm text-slate-600 mb-3 italic">ACM Conference on Mobile Computing and Networking (MobiCom) (Poster), 2016</p>
+                    <a href="http://doplab.unil.ch/wp-content/uploads/2016/01/Mobicom16-Mobidict.pdf" target="_blank" class="text-sm underline hover:text-slate-600">PDF →</a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://scholar.google.ch/citations?user=e3sxhY0AAAAJ&hl=en" target="_blank"
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 border-2 border-slate-900 btn-shadow hover:bg-slate-100 transition text-sm font-medium">
+                    Plus de publications (prépublications) →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 border-b-4 border-slate-900 inline-block pb-1">certifications</h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Agentic AI and AI Agents</h3>
+                    <p class="text-sm text-slate-700 mb-1">Vanderbilt University</p>
+                    <p class="text-sm text-slate-600 mb-3">janvier 2026</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/261ST9DS434H" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Finetuning Large Language Models</h3>
+                    <p class="text-sm text-slate-700 mb-1">DeepLearning.AI</p>
+                    <p class="text-sm text-slate-600 mb-3">janvier 2026</p>
+                    <a href="https://www.coursera.org/projects/finetuning-large-language-models-project" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Machine Learning in Production</h3>
+                    <p class="text-sm text-slate-700 mb-1">DeepLearning.AI</p>
+                    <p class="text-sm text-slate-600 mb-3">juillet 2025</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/FWA0ZNZ1SD7A" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Drug Discovery</h3>
+                    <p class="text-sm text-slate-700 mb-1">UC San Diego</p>
+                    <p class="text-sm text-slate-600 mb-3">septembre 2024</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/G9XUSJAQL2KH" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Rust Fundamentals</h3>
+                    <p class="text-sm text-slate-700 mb-1">Duke University</p>
+                    <p class="text-sm text-slate-600 mb-3">juin 2024</p>
+                    <a href="https://coursera.org/share/beeeab405b75a6ccab620572fde5572f" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Generative AI with Large Language Models</h3>
+                    <p class="text-sm text-slate-700 mb-1">DeepLearning.AI & AWS</p>
+                    <p class="text-sm text-slate-600 mb-3">décembre 2023</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/412dd9f5aa2df8c5c67b9fdb29c676e6" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Data Engineering with Azure</h3>
+                    <p class="text-sm text-slate-700 mb-1">Udemy</p>
+                    <p class="text-sm text-slate-600 mb-3">janvier 2023</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/UC-5175164f-668f-43e2-891a-34711d2943ac" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Applied Machine Learning</h3>
+                    <p class="text-sm text-slate-700 mb-1">University of Michigan</p>
+                    <p class="text-sm text-slate-600 mb-3">avril 2020</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/D79LRSTCF34" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Data Science</h3>
+                    <p class="text-sm text-slate-700 mb-1">University of Michigan</p>
+                    <p class="text-sm text-slate-600 mb-3">avril 2020</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/CWQKSU475EG5" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Amazon Web Services</h3>
+                    <p class="text-sm text-slate-700 mb-1">AWS</p>
+                    <p class="text-sm text-slate-600 mb-3">mai 2019</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/AV5KDASLHP44" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Laws & Economics of Media Platforms</h3>
+                    <p class="text-sm text-slate-700 mb-1">University of Chicago</p>
+                    <p class="text-sm text-slate-600 mb-3">juin 2018</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/KSSR6H96J8Q7" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Information Security</h3>
+                    <p class="text-sm text-slate-700 mb-1">University College London</p>
+                    <p class="text-sm text-slate-600 mb-3">janvier 2018</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/RFCXL2GAV25Y" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+                
+                <div class="section-card p-6">
+                    <h3 class="text-base font-bold mb-2">Machine Learning</h3>
+                    <p class="text-sm text-slate-700 mb-1">Stanford University</p>
+                    <p class="text-sm text-slate-600 mb-3">janvier 2016</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/U48VNLD7CHSX" target="_blank" class="text-sm underline hover:text-slate-600">Voir le certificat →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="beyond-work.html" class="inline-block mb-4 px-4 py-2 text-xs border-2 border-white hover:bg-white hover:text-slate-900 transition">au-delà du travail →</a>
+            <p class="text-sm">© 2026 Vaibhav Kulkarni</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Details arrow rotation
+        document.querySelectorAll('details').forEach(detail => {
+            detail.addEventListener('toggle', function() {
+                const summary = this.querySelector('summary');
+                if (this.open) {
+                    summary.textContent = summary.textContent.replace('▶', '▼');
+                } else {
+                    summary.textContent = summary.textContent.replace('▼', '▶');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
